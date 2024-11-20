@@ -1,0 +1,119 @@
+/* Navbar Styling */
+.navbar {
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: none;
+    /* Remove the border under the navbar */
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.logo-highlight {
+    color: orange;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+    /* For positioning the orange dot */
+    padding-bottom: 5px;
+    /* Optional for some space */
+}
+
+/* Orange dot when hovering over the links */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: orange;
+    visibility: hidden;
+    /* Initially hide the dot */
+}
+
+/* Show the dot on hover */
+.nav-link:hover::after {
+    visibility: visible;
+}
+
+/* Active link */
+.active-link {
+    color: orange;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    list-style: none;
+    padding: 10px 0;
+    border: 1px solid orange;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: orange;
+    color: black;
+}
+
+/* Search Bar Styling */
+.search_icon {
+    top: 7px;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.search {
+    background-color: black;
+    color: white;
+    border: 1px solid orange;
+    border-radius: 20px;
+}
+
+.search::placeholder {
+    color: white;
+    /* Set placeholder text color to white */
+}
+
+.bag {
+    width: 20px;
+    height: 20px;
+    margin: 8px 0px;
+}
