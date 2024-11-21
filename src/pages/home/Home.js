@@ -6,6 +6,7 @@ import Homecards from './homeCompnents/Homecards';  // Correct path for Tumbnil 
 import Createproduct from './homeCompnents/Createproduct';  // Correct path for Tumbnil component
 import Whychoose from './homeCompnents/Whychoose';
 import Whyus from './homeCompnents/Whyus';
+import Blogpage from './homeCompnents/Blogpage';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Homecards/> 
       <Whychoose/> 
       <Whyus/>
+      <Blogpage/>
      
     </>
   );

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    font-family: 
+    Helvetica;
+    background-color: black;
+}
+.title-matter{
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: #FF9F0D;
+    font-style: normal;
+    
+
+}
+.highlight{
+    color: #FF9F0D;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+
+    
+}
+.news{
+    font-family: 
+    Helvetica;
+    width: 462px;
+    display: contents;
+    color: white;
+  
+   
+   
+}
+.matter p {
+     /* Makes text bold */
+    text-align: left; /* Aligns text to the left */
+    letter-spacing: 1px; /* Increases spacing between letters */
+   /* Adjusts font size */
+    line-height: 1.5; /* Adjusts line height for better readability */
+   
+  }
+  
+.news-title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+  
+}
+.img-burger{
+    width: 422px;
+    height: 349px;
+    border-radius: 5px;
+}
+.burger-card,.pizza-card,.masala-card{
+border: 1px solid #94959B;
+width: 424px;
+height: 569px;
+margin-left: 15px;
+border-radius: 5px;
+}
+.matter{
+    color: white;
+    margin-left: 14px;
+    
+}
+.date{
+    color: #c5964e;
+    margin-top: 35px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-left: 13px;
+   
+}
+.btn{
+   justify-content: space-between;
+    line-height: 1.5;
+    letter-spacing: 1px;
+   
+}
+.learn-btn{
+    color: #bab4b4;
+   
+}
+.like,.message,.send{
+    padding-left: 10px;
+}
+
