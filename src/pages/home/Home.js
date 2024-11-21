@@ -2,13 +2,22 @@
 import React from 'react';
 import './Home.css';
 import Tumbnil from './homeCompnents/Tumbnil';  // Correct path for Tumbnil component
+import Homecards from './homeCompnents/Homecards';  // Correct path for Tumbnil component
+import Createproduct from './homeCompnents/Createproduct';  // Correct path for Tumbnil component
+import Whychoose from './homeCompnents/Whychoose';
+import Whyus from './homeCompnents/Whyus';
 
 const Home = () => {
   return (
-    <div>
+    <>
       
-      <Tumbnil />  {/* Tumbnil component renders here */}
-    </div>
+      <Tumbnil />
+      <Createproduct/>
+      <Homecards/> 
+      <Whychoose/> 
+      <Whyus/>
+     
+    </>
   );
 };
 

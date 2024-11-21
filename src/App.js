@@ -16,7 +16,7 @@ import './App.css'; // Importing global styles
 function App() {
   return (
     <Router>
-      <Navbar /> {/* The Navbar will be rendered on every page */}
+      <Navbar /> 
 
       <div className="container">
         <Routes>
