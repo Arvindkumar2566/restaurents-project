@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Importing React Router v6 components
 import Navbar from './components/navbar/Navbar'; // Importing the Navbar component
+import Footer from './components/footer/Footer'; // Importing the Navbar component
 import Home from './pages/home/Home'; // Importing the Home page
 import Menu from './pages/menu/Menu'; // Importing the Menu page
 import Blog from './pages/blog/Blog'; // Importing the Blog page
@@ -36,6 +37,7 @@ function App() {
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
+      <Footer/>
     </Router>
   );
 }
