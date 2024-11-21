@@ -2,16 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Footer.css";
 import { Link } from "react-router-dom";
-import img1 from "/assets/images/vector.svg";
-import img2 from "/assets/images/post1.svg";
-import img3 from "/assets/images/posts3.svg";
-import img4 from "/assets/images/post4.svg";
-import fb1 from "/assets/images/fb1.svg";
-import clock from "/assets/images/clock.svg";
-import insta from "/assets/images/insta.svg";
-import x from "/assets/images/x.svg";
-import youtube from "/assets/images/youtube.svg";
-import pics from "/assets/images/pics.svg";
+
 
 const Footer = () => {
   return (
@@ -119,21 +110,21 @@ const Footer = () => {
             <h5 className="text-warning">Recent Posts</h5>
             <ul className="list-unstyled">
               <li className="d-flex mb-3">
-                <img src={img2} alt="Post 1" className="me-3 rounded" />
+                <img src="/assets/images/post1.svg" alt="Post 1" className="me-3 rounded" />
                 <div>
                   <p className="mb-1">20 Feb 2022</p>
                   <p className="mb-0">Keep Your Business</p>
                 </div>
               </li>
               <li className="d-flex mb-3">
-                <img src={img3} alt="Post 2" className="me-3 rounded" />
+                <img src="/assets/images/post1.svg" alt="Post 1" className="me-3 rounded" />
                 <div>
                   <p className="mb-1">20 Feb 2022</p>
-                  <p className="mb-0">Stay Organized</p>
+                  <p className="mb-0">Stay organized</p>
                 </div>
               </li>
               <li className="d-flex">
-                <img src={img4} alt="Post 3" className="me-3 rounded" />
+                <img src="/assets/images/post4.svg" alt="Post 3" className="me-3 rounded" />
                 <div>
                   <p className="mb-1">20 Feb 2022</p>
                   <p className="mb-0">Achieve Goals</p>
@@ -149,18 +140,18 @@ const Footer = () => {
         <p className="mb-0">Copyright © 2022 by Ayeman. All Rights Reserved.</p>
         <div>
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            <img src={fb1} alt="Facebook" className="me-2 social-media" />
+            <img src="/assets/images/fb1.svg" alt="Facebook" className="me-2 social-media" />
           </a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <img src={insta} alt="Instagram" className="me-2 social-media" />
+            <img src="/assets/images/insta.svg" alt="Instagram" className="me-2 social-media" />
           </a>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <img src={x} alt="Twitter" className="me-2 social-media" />
+            <img src="/assets/images/x.svg" alt="Twitter" className="me-2 social-media" />
           </a>
           <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-            <img src={youtube} alt="YouTube" className="me-2 social-media" />
+            <img src="/assets/images/youtube.svg" alt="YouTube" className="me-2 social-media" />
           </a>
-          <img src={pics} alt="Pics" className="me-2 social-media" />
+          <img src="/assets/images/pics.svg" alt="Pics" className="me-2 social-media" />
         </div>
       </div>
     </footer>
