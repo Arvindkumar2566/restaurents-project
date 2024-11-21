@@ -1,11 +1,5 @@
 import React from 'react';
 import './Blogpage.css';
-import burger from './asets/burger.svg'
-import pizza from './asets/pizza.svg'
-import masala from './asets/masala.svg'
-import like from './asets/ThumbsUp.svg'
-import message from './asets/ChatDots.svg'
-import send from './asets/ShareNetwork.svg'
 
 export default function Blogpage() {
   return (
@@ -25,7 +19,7 @@ export default function Blogpage() {
       <div className='cards d-flex container mt-5'>
       <div className="burger-card " >
        <div>
-       <img src={burger} alt="burger" className="img-burger" />
+       <img src="/assets/images/burger.svg" alt="burger" className="img-burger" />
        </div>
        <div className='container'>
        <div>
@@ -42,9 +36,9 @@ export default function Blogpage() {
             <p>Learn More</p>
           </div>
           <div>
-            <img src={like} alt='like' className='like'/>
-            <img src={message} alt='message' className='message'/>
-            <img src={send} alt='send' className='send'/>
+            <img src="/assets/images/ThumbsUp.svg" alt='like' className='like'/>
+            <img src="/assets/images/ChatDots.svg" alt='message' className='message'/>
+            <img src="/assets/images/ShareNetwork.svg" alt='send' className='send'/>
           </div>
          </div>
         </div>
@@ -53,7 +47,7 @@ export default function Blogpage() {
       </div>
       <div className="pizza-card " >
        <div>
-       <img src={pizza} alt="burger" className="img-burger" />
+       <img src="/assets/images/pizza.svg" alt="burger" className="img-burger" />
        </div>
        <div className='container'>
        <div>
@@ -69,9 +63,9 @@ export default function Blogpage() {
             <p>Learn More</p>
           </div>
           <div>
-            <img src={like} alt='like' className='like'/>
-            <img src={message} alt='message' className='message'/>
-            <img src={send} alt='send' className='send'/>
+            <img src="/assets/images/ThumbsUp.svg" alt='like' className='like'/>
+            <img src="/assets/images/ChatDots.svg" alt='message' className='message'/>
+            <img src="/assets/images/ShareNetwork.svg" alt='send' className='send'/>
           </div>
          </div>
        </div>
@@ -80,7 +74,7 @@ export default function Blogpage() {
       </div>
       <div className="masala-card " >
        <div>
-       <img src={masala} alt="burger" className="img-burger" />
+       <img src="/assets/images/masala.svg" alt="burger" className="img-burger" />
        </div>
        <div className='container'>
        <div>
@@ -96,9 +90,9 @@ export default function Blogpage() {
             <p>Learn More</p>
           </div>
           <div className=''>
-            <img src={like} alt='like' className='like'/>
-            <img src={message} alt='message' className='message'/>
-            <img src={send} alt='send' className='send'/>
+            <img src="/assets/images/ThumbsUp.svg" alt='like' className='like'/>
+            <img src="/assets/images/ChatDots.svg" alt='message' className='message'/>
+            <img src="/assets/images/ShareNetwork.svg" alt='send' className='send'/>
           </div>
          </div>
        </div>
