@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-dark text-white">
+    <footer className="footer mt-5 text-white">
       {/* Email and Subscribe Section */}
       <div className="container text-center py-4 d-flex justify-content-between">
        <div>

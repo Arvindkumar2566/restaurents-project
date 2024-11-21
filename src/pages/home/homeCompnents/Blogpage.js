@@ -9,7 +9,7 @@ export default function Blogpage() {
           <p className='title-matter'>Blog Post</p>
         </div>
         <div className='news'>
-          <p>
+          <p className='new_titles'>
             <strong className='news-title'>
               <span className="highlight">La</span>test News & Blog
             </strong>
