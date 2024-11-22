@@ -12,7 +12,7 @@ import Activeproces from './homeCompnents/Activeproces';
 
 import Blogpage from './homeCompnents/Blogpage';
 import Statistics from './homeCompnents/Statistics'
-// 
+
 const Home = () => {
   return (
     <>
@@ -23,9 +23,6 @@ const Home = () => {
       <Statistics/>
       <Activeproces/>
       <Blogpage/>
-      
-
-     
     </>
   );
 };
