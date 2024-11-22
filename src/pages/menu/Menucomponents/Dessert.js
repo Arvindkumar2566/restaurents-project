@@ -12,7 +12,7 @@ export default function Dessert() {
       />
     </div>
     <div className="dessert-element container">
-      <img src='/assets/images/coffee.svg'/>
+      <img src='/assets/images/coffee.svg' alt='coffee'/>
       <p className='dessert-text'>Dessert</p>
       <div className="dessert-item">
         <div className="dessert-details">
