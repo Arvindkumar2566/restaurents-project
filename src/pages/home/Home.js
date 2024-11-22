@@ -7,6 +7,7 @@ import Createproduct from './homeCompnents/Createproduct';  // Correct path for 
 import Whychoose from './homeCompnents/Whychoose';
 import Whyus from './homeCompnents/Whyus';
 import Blogpage from './homeCompnents/Blogpage';
+import Activeproces from './homeCompnents/Activeproces';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Homecards/> 
       <Whychoose/> 
       <Whyus/>
+      <Activeproces/>
       <Blogpage/>
      
     </>
