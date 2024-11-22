@@ -26,8 +26,12 @@
   .menu-element {
     flex: 1;
     margin-left: 70px;
+
   }
-  
+
+  .coffee{
+    margin-left: 25px;
+  }
   .starter-text {
     color: #333;
     margin-bottom: 20px;
@@ -35,6 +39,7 @@
     font-size: 48px;
     font-weight: 700;
     line-height: 1;
+    margin-left: 25px;
   }
   
   .menu-item {
@@ -92,4 +97,10 @@
     color: orange;
     font-weight: bold;
   }
+  .menu-item:hover {
+  
+    cursor: pointer;
+  }
+  
+  
   

@@ -35,6 +35,10 @@
     font-size: 48px;
     font-weight: 700;
     line-height: 1;
+    margin-left: 25px;
+  }
+  .coffee{
+    margin-left: 25px;
   }
   
   .dessert-item{
@@ -91,5 +95,9 @@
     font-size: 18px;
     color: orange;
     font-weight: bold;
+  }
+  .dessert-item:hover {
+  
+    cursor: pointer;
   }
   

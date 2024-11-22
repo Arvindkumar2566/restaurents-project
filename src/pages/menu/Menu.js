@@ -14,7 +14,6 @@ function Menu() {
       <Statistics/>
       <Dessert/>
       <MainCourse/>
-      
     </div>
   );
 }
