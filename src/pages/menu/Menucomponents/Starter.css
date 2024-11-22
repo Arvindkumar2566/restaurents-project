@@ -2,7 +2,14 @@
 .starter-menu-container {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 40px;
+    background-color: white;
+  }
+  .items-description{
+    color: #6d6b6b;
+    font-size: 16px;
+    font-family: Helvetica;
+   
   }
   
   .image-container {
@@ -16,40 +23,40 @@
    
   }
   
-  .menu-container {
+  .menu-element {
     flex: 1;
-    margin-left: 100px;
+    margin-left: 70px;
   }
   
   .starter-text {
     color: #333;
     margin-bottom: 20px;
-    font-family: 
-    Helvetica;
+    font-family: Helvetica;
     font-size: 48px;
     font-weight: 700;
+    line-height: 1;
   }
   
   .menu-item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
-    border-bottom: 1px dotted #ccc;
-    padding-bottom: 10px;
+   
+    border-bottom: 0.05px solid #f5f0f0;
+  
   }
   
   .alder-text {
     font-size: 24px;
-    color: #333;
+    color: #0a0a0a;
     margin: 0;
     font-family: 
     Helvetica;
-    
+    line-height: 1;
     font-weight: 700;
   }
   
   .alder-text {
-    font-size: 14px;
+    font-size: 24px;
     color: #666;
     margin: 5px 0;
   }
@@ -59,22 +66,25 @@
     Helvetica;
     color: orange;
     font-weight: 700;
+    line-height: 1;
+    color: #333;
   }
-  .menu-details span {
-    font-size: 12px;
-    color: #999;
-  }
+
   .tormentoso-text{
     font-size: 24px;
     font-family: 
     Helvetica;
     font-weight: 700;
+    line-height: 1;
+    color: #333;
   }
   .Spicy-vegan-text{
     font-size: 24px;
     font-family: 
     Helvetica;
     font-weight: 700;
+    line-height: 1;
+    color: #333;
   }
   
   .menu-price {
