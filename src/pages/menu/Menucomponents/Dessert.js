@@ -1,11 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import { useNavigate } from 'react-router-dom'; 
 import './Dessert.css';
 
 export default function Dessert() {
   const navigate = useNavigate();
 
-  // Function to handle navigation
+
   const handleNavigation = (path) => {
     navigate(path);
   };
