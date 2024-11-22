@@ -3,8 +3,8 @@ import './Whychoose.css'
 
 const Whychoose = () => {
   return (
-    <div className=' d-flex col-sm-12 p-0'>
-        <div className=' col-sm-8'>
+    <div className=' d-flex col-sm-12 p-0 mt-5'>
+        <div className=' col-sm-6'>
             <div className='d-flex '>
                 <div>
                     <img className='whyus_1' src='assets/images/WhyUs_1.svg' alt='WhyUs_1'/>
@@ -20,8 +20,8 @@ const Whychoose = () => {
                 <img className='whyus_6' src='assets/images/WhyUs_6.svg' alt='WhyUs_1'/>
             </div>
         </div>
-        <div className='col-sm-4'>
-            <div className="content">
+        <div className='col-sm-6'>
+            <div className="why_content">
         <h3 className="why-title">Why Choose Us</h3>
         <h1 className="main-title">
           Extra <span className="highlight">ordinary</span> taste <br />

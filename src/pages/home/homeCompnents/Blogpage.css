@@ -50,14 +50,13 @@ body{
   
 }
 .img-burger{
-    width: 422px;
-    height: 349px;
-    border-radius: 5px;
+    width: 100%;
+   
 }
 .burger-card,.pizza-card,.masala-card{
 border: 1px solid #94959B;
-width: 424px;
-height: 569px;
+
+
 margin-left: 15px;
 border-radius: 5px;
 }

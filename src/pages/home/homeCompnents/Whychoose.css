@@ -103,8 +103,9 @@ position: relative;
         grid-template-columns: 1fr;
     }
 
-    .content {
+    .why_content {
         text-align: center;
+        width: 100%;
     }
 
     .icons {
