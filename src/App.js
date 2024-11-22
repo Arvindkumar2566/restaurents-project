@@ -18,7 +18,6 @@ function App() {
   return (
     <Router>
       <Navbar /> 
-
       <div className="container">
         <Routes>
           {/* Routes for different pages */}
@@ -32,7 +31,6 @@ function App() {
           <Route path="/about/mangos" element={<Mangos />} /> {/* Route for Mangos subpage */}
           <Route path="/about/apple" element={<Apple />} /> {/* Route for Apple subpage */}
           <Route path="/about/bananas" element={<Bananas />} /> {/* Route for Bananas subpage */}
-
           {/* Default route to Home if no matching route */}
           <Route path="/" element={<Home />} />
         </Routes>

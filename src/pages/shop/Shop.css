@@ -1,4 +1,48 @@
-.shop {
+/* General Styles for OurMenu */
+.ourmenu {
+    background-image: url("/public/assets/images/OurMenu.png");
+    background-size: cover;
+    height: 269px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: gold;
+}
+
+/* Style for the content inside the .ourmenu */
+.ourmenu-content {
+    color: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px;
+        width: 90%;
+}
+
+.ourmenu h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.MenuOur{
+    color:orange;
+}
+.ourmenu h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.ourmenu h3 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .ourmenu-content {
+        width: 80%;
+       
+    }
 }
