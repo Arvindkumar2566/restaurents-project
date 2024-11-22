@@ -1,111 +1,150 @@
+/* General styles */
 body {
-    margin: 0;
-    font-family: Helvetica;
-  }
-  
-  .hero-section {
-    position: relative;
-    width: 100%; /* Ensure it's full-width, responsive */
-    height: 550px; /* Full height */
-    background-image: url('');
-    /* Ensure the path is correct */
-    background-size: cover;
-    background-position: center;
-    color: white;
-  }
-  
-  .overlay {
-    position: absolute;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.activeprocess-hero-section {
+position: relative;
+  width: 100%;
+  height: 550px;
+  background-image: url("/public/assets/images/ActiveProcess_bg.svg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 369px;
+}
+
+.activeprocess-overlay {
+  position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Overlay color */
     display: flex;
-    justify-content: flex-end; /* Aligns content to the right */
+    justify-content: end;
     align-items: center;
-    padding-right: 50px; /* Adds padding from the edge */
-  }
-  
-  .content {
-    text-align: right; /* Align text to the right */
-    max-width: 600px; /* Adjust width for better layout */
-    padding: 20px;
-    margin-right: 100px;
-  }
-  
-  .content h4 {
-    font-size: 20px;
+}
+
+.activeprocess-content {
+text-align: right;
+  max-width: 100%;
+  padding: 0px 54px;
+  width: 742px;
+}
+
+.activeprocess-restaurantprocess-title {
+  font-size: 20px;
     font-weight: 400;
-    font-style: italic;
     margin-bottom: 10px;
-  }
-  
-  .content h1 {
-    font-size: 42px;
-   
-    font-family: Helvetica;
-    font-weight: 700;
-  }
-  
-  .content h1 span {
+    font-family: 'Great Vibes';
     color: orange;
-    font-weight: bold;
-  }
-  
-  .content p {
-    font-family: inter;
-    font-size: 16px;
-    margin: 20px 0;
-    color: rgb(178, 182, 185);
-  }
-  
-  .buttons {
-    display: flex;
-    justify-content: flex-end; /* Align buttons to the right */
-    gap: 15px;
-  }
-  
-  .read-more,
-  .play-video {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .read-more {
-    background-color: transparent;
-    color: orange;
-    border: 1px solid rgb(127, 124, 120);
-    border-radius: 25px;
-  }
-  
-  .read-more:hover {
-    background-color: orange;
-    color: white;
-    transform: scale(1.05);
-  }
-  
-  .play-video {
-   
-    color:orange;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .play-video span {
-    font-size: 18px;
-    background-color: orange;
-  }
-  
-  .play-video:hover {
-    background-color: white;
-    color: orange;
-    transform: scale(1.05);
-  }
-  
+}
+
+.activeprocess-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.activeprocess-content h1 span {
+  color: orange;
+  font-weight: bold;
+}
+
+.activeprocess-content p {
+  font-size: 16px;
+  margin: 20px 0;
+  color: rgb(178, 182, 185);
+}
+
+.activeprocess-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.activeprocess-read-more,
+.activeprocess-play-video {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.activeprocess-read-more {
+  background-color: transparent;
+  color: orange;
+  border: 1px solid rgb(127, 124, 120);
+  border-radius: 25px;
+}
+
+.activeprocess-read-more:hover {
+  background-color: orange;
+  color: white;
+  transform: scale(1.05);
+}
+
+.activeprocess-play-video {
+  color: orange;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.activeprocess-play-video:hover {
+  background-color: orange;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Modal styles */
+.activeprocess-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* Ensure it's above other elements */
+}
+
+.activeprocess-modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 700px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.activeprocess-modal-content iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 10px;
+}
+
+.activeprocess-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.activeprocess-close:hover {
+  color: red;
+  transition: color 0.3s ease;
+}

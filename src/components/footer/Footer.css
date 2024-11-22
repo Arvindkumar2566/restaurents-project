@@ -16,7 +16,7 @@
   
   
   .subscribe {
-    color: hwb(45 3% 0%);
+    color:rgb(255, 153, 0);
     font-size: 1rem;
     font-weight: bold;
     margin-top: 10px;
@@ -30,7 +30,7 @@
     width: 278px;
     height: 45px;
     display: flex;
-    background: hwb(45 3% 0%);
+    background: rgb(255, 153, 0);
     justify-content: unset;
     border-radius: 2px;
   }
@@ -76,7 +76,7 @@
   }
   
   .yellow-bar {
-    background-color: #ffc107;
+    background-color:rgb(255, 153, 0);
     height: 55px;
     padding: 10px 20px;
     display: flex;
@@ -93,7 +93,7 @@
   }
   
   .clock {
-    background-color: hwb(45 3% 0%);
+    background-color:rgb(255, 153, 0);
   }
   
   .footer {
@@ -108,7 +108,7 @@
     padding: 0 20px;
     font-size: 1rem;
     font-weight: bold;
-    color: orange;
+    color:rgb(255, 153, 0);
     background-color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -126,7 +126,7 @@
     padding: 0 15px;
     font-size: 1rem;
     outline: none;
-    background-color: #FF9F0D;
+    background-color:rgb(255, 153, 0);
     color: white;
   }
   

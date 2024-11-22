@@ -4,9 +4,9 @@ import './Createproduct.css';
 
 const Createproduct = () => {
   return (
-    <div className="createproduct-container mt-3 d-flex">
+    <div className="createproduct-container mt-3 col-sm-12 d-flex">
       {/* Left Section */}
-      <div className="content mt-5 ms-2">
+      <div className="content mt-5 col-sm-6 ms-2">
         <h1 className="title">About Us</h1>
         <h2 className="subtitle mt-2 ms-4">
           <b>
@@ -40,7 +40,7 @@ const Createproduct = () => {
       </div>
 
       {/* Right Section */}
-      <div className="images ms-5 mt-5">
+      <div className="images ms-5 col-sm-6 mt-5">
         <img src="/assets/images/Createproduct_1.svg" className="main-image img  " alt="Main Food" />
         <div className="sub-images d-flex">
           <img src="/assets/images/Createproduct_2.svg" className="sub-image img mt-2" alt="Sub Food 1" />

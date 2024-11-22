@@ -1,42 +1,68 @@
-import React from 'react';
-import './Activeproces.css'
-// import backgroundImage from './assets/bacground-image.svg';
+import React, { useState } from 'react';
+import './Activeproces.css';
 
-const backgroundImage = '/assets/images/bacground-image.svg'; // Replace with the actual path to your image
+const backgroundImage = '/assets/images/ActiveProcess_bg.svg'; // Correct image path
 
 export default function Activeproces() {
-  const handleReadMore = () => {
-    window.location.href = 'https://example.com/read-more'; // Replace with your "Read More" link
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
   };
 
-  const handlePlayVideo = () => {
-    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // Replace with your video link
+  const handleModalClose = () => {
+    setIsModalOpen(false);
   };
 
   return (
     <div
-      className="hero-section"
-      style={{ backgroundImage: `url(${backgroundImage})` }} // Ensure `backgroundImage` is defined
+      className="activeprocess-hero-section mt-4"
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="overlay container">
-        <div className="content">
-          <h4 className='restaurantprocess-title'>Restaurant Active Process</h4>
+      <div className="activeprocess-overlay container">
+        <div className="activeprocess-content">
+          <h4 className="activeprocess-restaurantprocess-title">Restaurant Active Process</h4>
           <h1>
             <span>We</span> Document Every Food Bean Process until it is saved
           </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit augue urna.
           </p>
-          <div className="buttons">
-            <button className="read-more" onClick={handleReadMore}>
+          <div className="activeprocess-buttons">
+            <button
+              className="activeprocess-read-more"
+              onClick={() =>
+                (window.location.href = 'https://example.com/read-more')
+              }
+            >
               Read More
             </button>
-            <button className="play-video" onClick={handlePlayVideo}>
+            <button className="activeprocess-play-video" onClick={handleModalOpen}>
               <span>▶</span> Play Video
             </button>
           </div>
         </div>
       </div>
+
+      {/* Video Modal */}
+      {isModalOpen && (
+        <div className="activeprocess-modal">
+          <div className="activeprocess-modal-content">
+            <span className="activeprocess-close" onClick={handleModalClose}>
+              &times;
+            </span>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
