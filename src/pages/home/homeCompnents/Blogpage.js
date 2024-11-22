@@ -4,7 +4,7 @@ import './Blogpage.css';
 export default function Blogpage() {
   return (
     <div>
-      <div className='blog-section'>
+      <div className='blog-section mt-5'>
         <div className='title'>
           <p className='title-matter'>Blog Post</p>
         </div>
