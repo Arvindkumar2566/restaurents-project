@@ -20,10 +20,8 @@ const Home = () => {
       <Createproduct/>
       <Homecards/> 
       <Whychoose/> 
-      <Activeproces/>
-
       <Statistics/>
-
+      <Activeproces/>
       <Blogpage/>
       
 
