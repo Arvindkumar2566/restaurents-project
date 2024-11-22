@@ -12,7 +12,7 @@ export default function Starter() {
         />
       </div>
       <div className="menu-element container">
-        <img src='/assets/images/coffee.svg'/>
+        <img src='/assets/images/coffee.svg' alt='coffee'/>
         <p className='starter-text'>Starter Menu</p>
         <div className="menu-item">
           <div className="menu-details">
