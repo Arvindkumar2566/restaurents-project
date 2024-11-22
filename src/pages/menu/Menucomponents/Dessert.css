@@ -97,7 +97,7 @@
     font-weight: bold;
   }
   .dessert-item:hover {
-  
+    background-color: #f9f9f9;
     cursor: pointer;
   }
   
