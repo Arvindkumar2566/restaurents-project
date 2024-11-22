@@ -1,12 +1,13 @@
 import React from 'react';
-import './OurMenu.css'
+import './OurMenu.css';
 
 const OurMenu = () => {
   return (
-    <div className='ourmenu'>
-      <h1>Our Menu</h1>
-      <h1>Home &gt; Menu</h1>
-      <h1>arvind</h1>
+    <div className="ourmenu">
+      <div className="ourmenu-content">
+        <h1>Our Menu</h1>
+        <h2>Home &gt;<span className='MenuOur'>Menu</span></h2>
+      </div>
     </div>
   );
 };
