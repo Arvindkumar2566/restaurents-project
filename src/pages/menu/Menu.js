@@ -2,10 +2,23 @@ import React from 'react';
 import './Menu.css';
 import OurMenu from './Menucomponents/OurMenu';
 import MainCourse from './Menucomponents/MainCourse';
+import Starter from './Menucomponents/Starter';
+import Dessert from './Menucomponents/Dessert';
 
 function Menu() {
   return (
     <div className='bg-white'>
+
+
+
+
+ 
+ 
+
+      <OurMenu/>
+      <Starter/>
+      <Dessert/>
+
       
       <OurMenu/>
       <MainCourse/>
