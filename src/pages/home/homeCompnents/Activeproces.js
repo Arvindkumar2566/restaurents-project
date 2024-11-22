@@ -20,7 +20,7 @@ export default function Activeproces() {
     >
       <div className="overlay container">
         <div className="content">
-          <h4>Restaurant Active Process</h4>
+          <h4 className='restaurantprocess-title'>Restaurant Active Process</h4>
           <h1>
             <span>We</span> Document Every Food Bean Process until it is saved
           </h1>
