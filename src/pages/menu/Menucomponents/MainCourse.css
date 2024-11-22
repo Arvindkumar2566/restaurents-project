@@ -1,0 +1,80 @@
+/* Main container for the layout */
+.main-course-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Left section */
+.main-course-left {
+    flex: 2;
+}
+
+.main-course-left h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.main-course-left .icon {
+    font-size: 1.5rem;
+    color: orange;
+    margin-right: 10px;
+}
+
+/* List of menu items */
+.menu-items {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px dotted #ddd;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-items li:hover {
+    background-color: #f9f9f9;
+}
+
+.item-details h2 {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.item-details p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.item-details .calories {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: orange;
+    font-weight: bold;
+}
+
+/* Right section */
+.main-course-right {
+    flex: 1;
+}
+
+.main-course-image {
+    width: 100%;
+   
+    object-fit: cover;
+}
