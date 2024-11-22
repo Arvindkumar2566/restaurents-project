@@ -2,6 +2,7 @@ import React from 'react';
 import './Menu.css';
 import OurMenu from './Menucomponents/OurMenu';
 import Starter from './Menucomponents/Starter';
+import Dessert from './Menucomponents/Dessert';
 
 function Menu() {
   return (
@@ -9,6 +10,7 @@ function Menu() {
 
       <OurMenu/>
       <Starter/>
+      <Dessert/>
       
     </div>
   );

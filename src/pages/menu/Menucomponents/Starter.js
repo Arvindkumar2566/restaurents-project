@@ -3,7 +3,7 @@ import './Starter.css';
 
 export default function Starter() {
   return (
-    <div className="starter-menu-container">
+    <div className="starter-menu">
       <div className="image-containe">
         <img
           src="/assets/images/starter.svg" 
