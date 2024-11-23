@@ -1,0 +1,107 @@
+
+.starter-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: white;
+  }
+  .items-description{
+    color: #6d6b6b;
+    font-size: 16px;
+    font-family: Helvetica;
+   
+  }
+  
+  .image-container {
+   display: flex;
+   gap: 20px;
+  }
+  
+  .food-image {
+    width: 400px;
+    height: 500px;
+   
+  }
+  
+  .menu-element {
+    flex: 1;
+    margin-left: 70px;
+
+  }
+
+  .coffee{
+    margin-left: 25px;
+  }
+  .starter-text {
+    color: #333;
+    margin-bottom: 20px;
+    font-family: Helvetica;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    margin-left: 25px;
+  }
+  
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+   
+    border-bottom: 0.05px solid #f5f0f0;
+  
+  }
+  
+  .alder-text {
+    font-size: 24px;
+    color: #0a0a0a;
+    margin: 0;
+    font-family: 
+    Helvetica;
+    line-height: 1;
+    font-weight: 700;
+  }
+  
+  .alder-text {
+    font-size: 24px;
+    color: #666;
+    margin: 5px 0;
+  }
+  .berrieer-text{
+    font-size: 24px;
+    font-family: 
+    Helvetica;
+    color: orange;
+    font-weight: 700;
+    line-height: 1;
+    color: #333;
+  }
+
+  .tormentoso-text{
+    font-size: 24px;
+    font-family: 
+    Helvetica;
+    font-weight: 700;
+    line-height: 1;
+    color: #333;
+  }
+  .Spicy-vegan-text{
+    font-size: 24px;
+    font-family: 
+    Helvetica;
+    font-weight: 700;
+    line-height: 1;
+    color: #333;
+  }
+  
+  .menu-price {
+    font-size: 18px;
+    color: orange;
+    font-weight: bold;
+  }
+  .menu-item:hover {
+    background-color: #f9f9f9;
+
+    cursor: pointer;
+  }
+  
+  
+  
