@@ -1,13 +1,12 @@
 import React from 'react';
 import './Shop.css';
+import CardDetails from './shopComponents/CardDetails';
+
 
 function Shop() {
   return (
-    <div className="ourmenu">
-      <div className="ourmenu-content">
-        <h1>Our Menu</h1>
-        <h2>Home &gt;<span className='MenuOur'>Menu</span></h2>
-      </div>
+    <div>
+      <CardDetails/>
     </div>
   );
 }
