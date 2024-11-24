@@ -8,6 +8,8 @@ import Whychoose from './homeCompnents/Whychoose';
 import Activeproces from './homeCompnents/Activeproces';
 import Blogpage from './homeCompnents/Blogpage';
 import Statistics from './homeCompnents/Statistics'
+import Ourclientsaying from './homeCompnents/Ourclientsaying';
+import Chiefs from './homeCompnents/Chiefs';
 
 const Home = () => {
   return (
@@ -17,6 +19,8 @@ const Home = () => {
       <Homecards/> 
       <Whychoose/> 
       <Statistics/>
+      <Chiefs/>
+      <Ourclientsaying/>
       <Activeproces/>
       <Blogpage/>
     </>

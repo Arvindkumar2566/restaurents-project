@@ -1,0 +1,53 @@
+.chief-text{
+    font-family:Great Vibes;
+    color: #f4c042;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    
+}
+.chief-card-section{
+    margin-top: 30px;
+}
+.meet-our-chief span{
+    color: #f4c042;
+    font-weight: 700;
+    font-size: 48px;
+}
+.meet-our-chief{
+    font-size: 48px;
+    font-weight: 700;
+}
+.chief-font{
+    text-align: center;
+}
+.chief-card1{
+    width: 285px;
+    margin-left: 25px;  
+     height: 390px;
+}
+.chief-card2{
+    width: 300px;
+    height: 390px;
+}
+.see-btn{
+   
+    background: none;
+    border: orange 1px solid;
+    color: white;
+    padding: 11px 28px;
+    border-radius: 42px;
+    text-decoration: none;
+
+}
+.see-more-button-container{
+    text-align: center;
+    margin-top: 25px;
+}
+.see-btn:hover{
+    background-color: #f4c042;
+}
+.see-more-button-container a  {
+    text-decoration: none; 
+    color: white;
+}

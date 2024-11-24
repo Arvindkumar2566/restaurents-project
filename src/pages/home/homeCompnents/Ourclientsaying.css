@@ -1,0 +1,150 @@
+
+  
+  .testimonials-font .section-title {
+    font-family:Great Vibes;
+    color: #f4c042;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+   
+  }
+  .our-client-section{
+    margin-top: 25px;
+  }
+  
+  .our-client-sayingtext {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  .client-card {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    width: 700px;
+    box-shadow: 0 1px 7px white;
+    
+  }
+  .card-elements{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .client-pic {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  
+  .quotes {
+   
+    width: 30px;
+    padding-top: 30px;
+    
+  }
+  
+  .feedback {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  .rating .star {
+    width: 20px;
+     
+  }
+  
+  .client-name {
+    font-size: 24px;
+    font-weight: 700;
+
+  }
+  
+  .job {
+    color: #f4c042;
+  }
+  
+  .dots {
+
+    width: 12px;
+    background-color: aliceblue;
+  }
+  
+.slick-dots {
+    bottom: 0;
+    text-align: center; 
+  }
+  
+  .slick-dots li {
+    margin: 0 5px;
+    color: #f4c042; 
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px; 
+    color: #f4c042;
+    opacity: 1; 
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #f4c042; 
+    font-size: 14px; 
+  }
+  
+  .quote-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    
+  }
+  
+
+ 
+  .rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .stars {
+    width: 100px; 
+  }
+  
+ 
+  .client-card {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    width: 700px;
+    box-shadow: 0 1px 7px white;
+  }
+
+.custom-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #f4c042; 
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slick-active .custom-dot {
+    background-color: #ffa500; 
+    transform: scale(1.2); 
+  }
+  
+  
+  
+ 
+  
+ 
+ 
+  
