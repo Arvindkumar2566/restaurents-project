@@ -1,0 +1,23 @@
+.stock-text{
+    color: orange;
+}
+.catr-item-name{
+ font-size: 48px;
+ font-weight: 700;
+ line-height: 56px;   
+}
+.rating-section{
+    display: "flex";
+     align-items: "center";
+      gap: "10px";
+}
+.decrement-btn{
+    background:white;
+    border: 1px solid;
+    padding: 3px 21px
+}
+.increment-btn{
+    background: rgb(186, 182, 182);
+    border: 1px solid;
+    padding: 3px 21px
+}
