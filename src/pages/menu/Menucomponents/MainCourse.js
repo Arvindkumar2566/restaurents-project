@@ -57,7 +57,7 @@ const MainCourse = () => {
       </div>
       <div className="main-course-right">
         <img
-          src="/assets/images/main-course.svg.jpg"
+          src="/assets/images/main-course.svg"
           alt="Main Course"
           className="main-course-image"
         />
