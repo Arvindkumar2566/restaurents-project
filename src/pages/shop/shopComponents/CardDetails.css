@@ -1,6 +1,4 @@
-.stock-text{
-    color: orange;
-}
+
 .catr-item-name{
  font-size: 48px;
  font-weight: 700;
@@ -17,7 +15,56 @@
     padding: 3px 21px
 }
 .increment-btn{
-    background: rgb(186, 182, 182);
+    background: white;
     border: 1px solid;
     padding: 3px 21px
+    
 }
+.count{
+    padding: 6px 15px;
+    background-color: white;
+    color: black;
+}
+.sub-item-images {
+    width: 130px;
+  
+    gap: 10px; 
+  }
+  
+  .sub-item {
+    margin-left: 5px; 
+  }
+  .cart-product{
+    width: 450px;
+    height: 540px;
+   
+  }
+  .carddetail-section{
+    background-color: white;
+    padding: 50px;
+    gap: 25px;
+   
+  }
+  .stock-text {
+    background-color: orange;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .yummy-chicken-matter{
+    margin-top: 30px;
+  }
+  .cost-section{
+margin-top: 20px;
+  }
+  .add-cart-text{
+background-color: orange;
+color: white;
+border: white 1px ;
+padding: 5px;
+margin-left: 10px;
+border-radius: 2px;
+  }
+  .insta-icon{
+    margin-left: 10px;
+  }
