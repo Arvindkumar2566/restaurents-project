@@ -73,13 +73,13 @@ const CardDetails = () => {
             </button>
           </div>
 
-          {/* Wishlist and Compare */}
+       
           <div >
             <span className="text-dark ml-1 " >♡ Add to Wishlist</span>
             <span className="text-dark">⚖️ Compare</span>
           </div>
 
-          {/* Product Details */}
+        
           <p className="text-dark mt-4">
             <strong>Category:</strong> Pizza
           </p>
@@ -87,16 +87,16 @@ const CardDetails = () => {
             <strong>Tag:</strong> Our Shop
           </p>
 
-          {/* Social Share Icons */}
+          
           <div>
             <strong className="text-dark" >Share: </strong>
-            <a href="#" >
+            <a href="https://www.instagram.com/" >
               <img src="/assets/images/insta-icon.svg" alt="insta" className="insta-icon"/>
             </a>
-            <a href="#" >
+            <a href="https://www.facebook.com/" >
             <img src="/assets/images/fb-icon.svg" alt="fb" className="insta-icon"/>
             </a>
-            <a href="#" >
+            <a href="https://x.com/?lang=en" >
             <img src="/assets/images/x-icon.svg" alt="x" className="insta-icon"/>
             </a>
             <a href="#" >
