@@ -25,7 +25,6 @@ const Home = () => {
       <Ourclientsaying/>
       <Activeproces/>
       <Blogpage/>
-      
     </>
   );
 };

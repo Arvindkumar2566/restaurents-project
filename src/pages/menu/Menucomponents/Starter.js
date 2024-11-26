@@ -23,7 +23,6 @@ export default function Starter() {
         <img src="/assets/images/coffee.svg" alt="coffee" className='coffee'/>
         <p className="starter-text">Starter Menu</p>
 
-        {/* Menu Items */}
         <ul className="menu-list">
           <li className="menu-item" onClick={() => handleNavigation('/home')}>
             <div className="menu-details">

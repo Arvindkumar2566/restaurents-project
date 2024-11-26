@@ -1,11 +1,15 @@
 import React from 'react';
 import './Blog.css';
+import Blogcomponent from './Blogcomponents/Blogcomponent';
+import Blogcomponentbody from './Blogcomponents/Blogcomponentbody';
 
 function Blog() {
   return (
     <div className="blog">
-      <h1>Read Our Blog</h1>
-      <p>Stay updated with our latest posts.</p>
+      
+    
+      <Blogcomponent/>
+      <Blogcomponentbody/>
     </div>
   );
 }

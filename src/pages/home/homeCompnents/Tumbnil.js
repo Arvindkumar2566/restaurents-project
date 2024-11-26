@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
 import './Tumbnil.css';
-// Remove all imports for images since you're accessing them via the public folder
 
 const Tumbnil = () => {
   return (
