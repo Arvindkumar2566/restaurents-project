@@ -103,5 +103,83 @@
     cursor: pointer;
   }
   
+  Starter.css
+
+/* Style for the overall starter menu */
+.starter-menu {
+  padding: 2rem;
+  background-color:white;
+}
+
+/* Style for the product names */
+.product-name {
+  font-size: 1.2rem; /* Adjust the font size */
+  font-weight: bold; /* Make the font bold */
+  color: #333; /* Default color */
+  margin-bottom: 0.5rem; /* Space between name and description */
+  text-transform: capitalize; /* Capitalize each word */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for product names */
+.product-name:hover {
+ 
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Menu item details */
+.menu-details {
+  margin-bottom: 1rem;
+}
+
+/* Price styling */
+.menu-price {
+  font-size: 1rem;
+  color:orange;
+  font-weight: 500;
+}
+
+/* General layout styles */
+.menu-item {
+  list-style: none;
+
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+/* Menu item hover effect */
+
+
+/* Additional styling for description */
+.items-description {
+  font-size: 0.9rem;
+  color: #666;
   
+}
+
+/* Image container */
+.image-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.food-image {
+  width: 100%;
+  max-width: 400px;
+}
+
+.coffee {
+  width: 50px;
+  margin-bottom: 1rem;
+}
+.menu-price{
+  margin-left: -5px;
+    color: orange;
+    font-weight: 600;
+}
   

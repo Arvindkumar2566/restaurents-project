@@ -4,12 +4,11 @@ import CardDetails from './shopComponents/CardDetails';
 import Ourshopheader from './shopComponents/Ourshopheader';
 import ProductDescription from './shopComponents/ProductDescription';
 
-
 function Shop() {
   return (
     <div>
-      <Ourshopheader/>
-      <CardDetails/>
+      <Ourshopheader />
+      <CardDetails />
       <ProductDescription/>
     </div>
   );

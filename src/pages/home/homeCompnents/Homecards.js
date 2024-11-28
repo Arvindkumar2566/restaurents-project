@@ -1,7 +1,7 @@
 import React from 'react';
 import './Homecard.css';
 
-// Corrected paths to images inside the public/assets/images folder
+
 const frontImage1 = '/assets/images/Homecard_1.svg';
 const frontImage2 = '/assets/images/Homecard_2.svg';
 const frontImage3 = '/assets/images/Homecard_3.svg';
@@ -9,7 +9,7 @@ const frontImage4 = '/assets/images/Homecard_4.svg';
 
 const Homecards = () => {
   const images = [frontImage1, frontImage2, frontImage3, frontImage4];
-  const discounts = ['30%', '40%', '17%', '67%']; // Discount percentages for each card
+  const discounts = ['30%', '40%', '17%', '67%']; 
 
   return (
     <>

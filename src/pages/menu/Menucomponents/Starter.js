@@ -5,10 +5,40 @@ import './Starter.css';
 export default function Starter() {
   const navigate = useNavigate();
 
- 
-  const handleNavigation = (path) => {
-    navigate(path);
+  const handleNavigation = (path, productDetails) => {
+    navigate(path, { state: productDetails });
   };
+
+  const products = [
+    {
+      name: 'Alder Grilled Chinook Salmon',
+      description: 'Toasted French bread topped with romano, cheddar\n560 CAL',
+      price: '32$',
+      image: '/assets/images/starter.svg',
+      catagory:"starter",
+    },
+    {
+      name: 'Berries and Creme Tart',
+      description: 'Gorgonzola, ricotta, mozzarella, taleggio\n700 CAL',
+      price: '43$',
+      image: '/assets/images/starter.svg',
+      catagory:"starter",
+    },
+    {
+      name: 'Tormentoso Bush Pizza Pintoage',
+      description: 'Ground cumin, avocados, peeled and cubed\n1000 CAL',
+      price: '14$',
+      image: '/assets/images/pizza.svg',
+      catagory:"pizza",
+    },
+    {
+      name: 'Spicy Vegan Potato Curry',
+      description: 'Spreadable cream cheese, crumbled blue cheese\n560 CAL',
+      price: '35$',
+      image: '/assets/images/starter.svg',
+      catagory:"starter",
+    },
+  ];
 
   return (
     <div className="starter-menu">
@@ -20,57 +50,31 @@ export default function Starter() {
         />
       </div>
       <div className="menu-element container">
-        <img src="/assets/images/coffee.svg" alt="coffee" className='coffee'/>
+        <img src="/assets/images/coffee.svg" alt="coffee" className="coffee" />
         <p className="starter-text">Starter Menu</p>
 
         <ul className="menu-list">
-          <li className="menu-item" onClick={() => handleNavigation('/home')}>
-            <div className="menu-details">
-              <p className="alder-text">Alder Grilled Chinook Salmon</p>
-              <p className="items-description">
-                Toasted French bread topped with romano, cheddar
-                <br />
-                560 CAL
-              </p>
-            </div>
-            <div className="menu-price">32$</div>
-          </li>
-
-          <li className="menu-item" onClick={() => handleNavigation('/stir-fry')}>
-            <div className="menu-details">
-              <p className="berrieer-text">Berries and Creme Tart</p>
-              <p className="items-description">
-                Gorgonzola, ricotta, mozzarella, taleggio
-                <br />
-                700 CAL
-              </p>
-            </div>
-            <div className="menu-price">43$</div>
-          </li>
-
-          <li className="menu-item" onClick={() => handleNavigation('/salad')}>
-            <div className="menu-details">
-              <p className="tormentoso-text">Tormentoso Bush Pizza Pintoage</p>
-              <p className="items-description">
-                Ground cumin, avocados, peeled and cubed
-                <br />
-                1000 CAL
-              </p>
-            </div>
-            <div className="menu-price">14$</div>
-          </li>
-
-          <li className="menu-item" onClick={() => handleNavigation('/potato-curry')}>
-            <div className="menu-details">
-              <p className="Spicy-vegan-text">Spicy Vegan Potato Curry</p>
-              <p className="items-description">
-                Spreadable cream cheese, crumbled blue cheese
-                <br />
-                560 CAL
-              </p>
-            </div>
-            <div className="menu-price">35$</div>
-          </li>
+          {products.map((product) => (
+            <li
+              
+              className="menu-item"
+              onClick={() =>
+                handleNavigation('/shop', {
+                  name: product.name,
+                  description: product.description,
+                  price: product.price,
+                  image: product.image,
+                  catagory:product.catagory
+                })
+              }
+            >
+              <div className="menu-details">
+                <p className="product-name">{product.name}</p>
+                <p className="items-description">{product.description}</p>
+              </div>
+              <div className="menu-price">{product.price}</div>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
