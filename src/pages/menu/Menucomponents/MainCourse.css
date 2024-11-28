@@ -14,9 +14,10 @@
 }
 
 .main-course-left h1 {
-    font-size: 2rem;
+    font-size: 48px;
     color: #333;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .main-course-left .icon {
@@ -46,9 +47,10 @@
 }
 
 .item-details h2 {
-    font-size: 1.2rem;
+    font-size: 20px;
     color: #000;
     margin-bottom: 5px;
+    font-weight: 700;
 }
 
 .item-details p {

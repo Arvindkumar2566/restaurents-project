@@ -11,7 +11,7 @@
     text-align: center;
 }
 
-/* Style for the content inside the .ourmenu */
+
 .shop-details-content {
     color: white;
         padding: 20px;
@@ -30,8 +30,13 @@
 }
 .shop-details h2 {
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom:15px;
     font-weight: 400;
+}
+.readmore-button:hover{
+    background:orange;
+    color: white;
+
 }
 
 .shop-details h3 {

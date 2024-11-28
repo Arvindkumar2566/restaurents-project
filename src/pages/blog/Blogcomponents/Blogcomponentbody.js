@@ -29,11 +29,11 @@ export default function Blogcomponentbody() {
         <div className="masala-section" >
           <img src="/assets/images/masala-blog.svg" alt="masala-blog" className="masala-blog" />
           <div className="calender-dates d-flex">
-            <img src="/assets/images/blog-dates.svg" alt="blog-dates" className="blog-dates" />
+            <img src="/assets/images/blog-dates.svg" alt="blog-dates" className="blog-dates mb-2" />
             <p className="mt-2 ml-2">Feb 14,2022 /</p>
-            <img src="/assets/images/chat-product.svg" alt="chats" className="chats ml-2" />
+            <img src="/assets/images/chat-product.svg" alt="chats" className="chats ml-2 mb-2" />
             <p className="mt-2 ml-2">3 /</p>
-            <img src="/assets/images/contact-logo.svg" alt="contact-logo" className="contact-logo ml-2" />
+            <img src="/assets/images/contact-logo.svg" alt="contact-logo" className="contact-logo ml-2 mb-2" />
             <p className="mt-2 ml-2">Admin</p>
           </div>
           <div className="reasons-detox">
@@ -53,11 +53,11 @@ export default function Blogcomponentbody() {
          <div className="pizza-large-section" >
          <img src="/assets/images/pizza-large.svg" alt="masala-blog" className="masala-blog" />
          <div className="calender-dates d-flex">
-           <img src="/assets/images/blog-dates.svg" alt="blog-dates" className="blog-dates" />
+           <img src="/assets/images/blog-dates.svg" alt="blog-dates" className="blog-dates mb-2" />
            <p className="mt-2 ml-2">Feb 14,2022 /</p>
-           <img src="/assets/images/chat-product.svg" alt="chats" className="chats ml-2" />
+           <img src="/assets/images/chat-product.svg" alt="chats" className="chats ml-2 mb-2" />
            <p className="mt-2 ml-2">3 /</p>
-           <img src="/assets/images/contact-logo.svg" alt="contact-logo" className="contact-logo ml-2" />
+           <img src="/assets/images/contact-logo.svg" alt="contact-logo" className="contact-logo ml-2 mb-2" />
            <p className="mt-2 ml-2">Admin</p>
          </div>
          <div className="reasons-detox">
@@ -77,11 +77,11 @@ export default function Blogcomponentbody() {
         <div className="masala-section" >
           <img src="/assets/images/hole-burger.svg" alt="masala-blog" className="masala-blog" />
           <div className="calender-dates d-flex">
-            <img src="/assets/images/blog-dates.svg" alt="blog-dates" className="blog-dates" />
+            <img src="/assets/images/blog-dates.svg" alt="blog-dates" className="blog-dates mb-2" />
             <p className="mt-2 ml-2">Feb 14,2022 /</p>
-            <img src="/assets/images/chat-product.svg" alt="chats" className="chats ml-2" />
+            <img src="/assets/images/chat-product.svg" alt="chats" className="chats ml-2 mb-2" />
             <p className="mt-2 ml-2">3 /</p>
-            <img src="/assets/images/contact-logo.svg" alt="contact-logo" className="contact-logo ml-2" />
+            <img src="/assets/images/contact-logo.svg" alt="contact-logo" className="contact-logo ml-2 mb-2" />
             <p className="mt-2 ml-2">Admin</p>
           </div>
           <div className="reasons-detox">
@@ -102,11 +102,11 @@ export default function Blogcomponentbody() {
         <div className="masala-section" >
           <img src="/assets/images/bread-large.svg" alt="masala-blog" className="masala-blog" />
           <div className="calender-dates d-flex">
-            <img src="/assets/images/blog-dates.svg" alt="blog-dates" className="blog-dates" />
+            <img src="/assets/images/blog-dates.svg" alt="blog-dates" className="blog-dates mb-2" />
             <p className="mt-2 ml-2">Feb 14,2022 /</p>
-            <img src="/assets/images/chat-product.svg" alt="chats" className="chats ml-2" />
+            <img src="/assets/images/chat-product.svg" alt="chats" className="chats ml-2 mb-2" />
             <p className="mt-2 ml-2">3 /</p>
-            <img src="/assets/images/contact-logo.svg" alt="contact-logo" className="contact-logo ml-2" />
+            <img src="/assets/images/contact-logo.svg" alt="contact-logo" className="contact-logo ml-2 mb-2" />
             <p className="mt-2 ml-2">Admin</p>
           </div>
           <div className="reasons-detox">

@@ -50,7 +50,7 @@ export default function Dessert() {
         />
       </div>
       <div className="dessert-element container">
-        <img src="/assets/images/coffee.svg" alt="coffee" className="coffee" />
+        <img src="/assets/images/coffee.svg" alt="coffee" className="coffee1" />
         <p className="dessert-text1">Dessert Menu</p>
 
         <ul className="dessert-list">
