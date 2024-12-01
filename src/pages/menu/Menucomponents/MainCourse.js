@@ -5,10 +5,42 @@ import './MainCourse.css';
 const MainCourse = () => {
   const navigate = useNavigate();
 
-  // Function to handle navigation to specific paths
-  const handleNavigation = (path) => {
-    navigate(path); // Navigate to the provided path
+
+  const handleNavigation = (path, productDetails) => {
+    navigate(path, { state: productDetails });
   };
+
+
+  const products = [
+    {
+      name: 'Optic Big Breakfast Combo Menu',
+      description: 'Toasted French bread topped with romano, cheddar\n560 CAL',
+      price: '32$',
+      image: '/assets/images/main-course.svg',
+      category: 'main-course',
+    },
+    {
+      name: 'Cashew Chicken With Stir-Fry',
+      description: 'Gorgonzola, ricotta, mozzarella, taleggio\n700 CAL',
+      price: '43$',
+      image: '/assets/images/main-course.svg',
+      category: 'main-course',
+    },
+    {
+      name: 'Vegetables & Green Salad',
+      description: 'Ground cumin, avocados, peeled and cubed\n1000 CAL',
+      price: '14$',
+      image: '/assets/images/vegetable-salad.svg', // Example image for variety
+      category: 'salad',
+    },
+    {
+      name: 'Spicy Vegan Potato Curry',
+      description: 'Spreadable cream cheese, crumbled blue cheese\n560 CAL',
+      price: '35$',
+      image: '/assets/images/vegan-curry.svg', // Example image for variety
+      category: 'vegan',
+    },
+  ];
 
   return (
     <div className="main-course-container mx-5">
@@ -17,47 +49,32 @@ const MainCourse = () => {
           <span className="icon">🍳</span> Main Course
         </h1>
         <ul className="menu-items">
-          {/* Optic Big Breakfast Combo Menu */}
-          <li onClick={() => handleNavigation('/breakfast')}>
-            <div className="item-details">
-              <h2>Optic Big Breakfast Combo Menu</h2>
-              <p>Toasted French bread topped with romano, cheddar</p>
-              <p className="calories">560 CAL</p>
-            </div>
-            <span className="price">32$</span>
-          </li>
-          {/* Cashew Chicken With Stir-Fry */}
-          <li onClick={() => handleNavigation('/stir-fry')}>
-            <div className="item-details">
-              <h2>Cashew Chicken With Stir-Fry</h2>
-              <p>Gorgonzola, ricotta, mozzarella, taleggio</p>
-              <p className="calories">700 CAL</p>
-            </div>
-            <span className="price">43$</span>
-          </li>
-          {/* Vegetables & Green Salad */}
-          <li onClick={() => handleNavigation('/salad')}>
-            <div className="item-details">
-              <h2>Vegetables & Green Salad</h2>
-              <p>Ground cumin, avocados, peeled and cubed</p>
-              <p className="calories">1000 CAL</p>
-            </div>
-            <span className="price">14$</span>
-          </li>
-          {/* Spicy Vegan Potato Curry */}
-          <li onClick={() => handleNavigation('/potato-curry')}>
-            <div className="item-details">
-              <h2>Spicy Vegan Potato Curry</h2>
-              <p>Spreadable cream cheese, crumbled blue cheese</p>
-              <p className="calories">560 CAL</p>
-            </div>
-            <span className="price">35$</span>
-          </li>
+          {products.map((product) => (
+            <li
+              key={product.name}
+              onClick={() =>
+                handleNavigation('/Shop', {
+                  name: product.name,
+                  description: product.description,
+                  price: product.price,
+                  image: product.image,
+                  category: product.category,
+                })
+              }
+            >
+              <div className="item-details">
+                <h2>{product.name}</h2>
+                <p>{product.description}</p>
+                <p className="calories">{product.description.split('\n')[1]}</p>
+              </div>
+              <span className="price">{product.price}</span>
+            </li>
+          ))}
         </ul>
       </div>
       <div className="main-course-right">
         <img
-          src="/assets/images/main_course_image.jpg"
+          src="/assets/images/main-course.svg" // Use a default or category image
           alt="Main Course"
           className="main-course-image"
         />

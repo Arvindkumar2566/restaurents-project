@@ -8,6 +8,9 @@ import Whychoose from './homeCompnents/Whychoose';
 import Activeproces from './homeCompnents/Activeproces';
 import Blogpage from './homeCompnents/Blogpage';
 import Statistics from './homeCompnents/Statistics'
+import Ourclientsaying from './homeCompnents/Ourclientsaying';
+import Chiefs from './homeCompnents/Chiefs';
+import Ourmenu from './homeCompnents/Ourmenu';
 
 const Home = () => {
   return (
@@ -17,6 +20,9 @@ const Home = () => {
       <Homecards/> 
       <Whychoose/> 
       <Statistics/>
+      <Ourmenu/>
+      <Chiefs/>
+      <Ourclientsaying/>
       <Activeproces/>
       <Blogpage/>
     </>

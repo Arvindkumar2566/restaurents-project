@@ -1,12 +1,15 @@
 import React from 'react';
 import './Shop.css';
 import CardDetails from './shopComponents/CardDetails';
-
+import Ourshopheader from './shopComponents/Ourshopheader';
+import ProductDescription from './shopComponents/ProductDescription';
 
 function Shop() {
   return (
     <div>
-      <CardDetails/>
+      <Ourshopheader />
+      <CardDetails />
+      <ProductDescription/>
     </div>
   );
 }

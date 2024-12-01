@@ -1,0 +1,73 @@
+.description-element{
+   
+    color: white;
+    background: orange;
+    border: none;
+    padding: 15px 35px;
+}
+.reviews-text{
+    border: none;
+    padding: 15px 25px; 
+  background: none;
+    color:black;
+    margin-left: 100px;
+}
+.description-element a{
+    color: white;
+
+    text-decoration: none;
+}
+.reviews-text a{
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+}
+.product-description-section{
+    background: white;
+    padding: 50px;
+   
+}
+.description-matter{
+    margin-top: 25px;
+}
+.description-text{
+    line-height: 30px;
+    font-family: Helvetica;
+}
+.key-benifit-text{
+font-size: 18px;
+font-family: Helvetica;
+font-weight: 400;
+color: rgb(59, 58, 58);
+line-height: 30px;
+}
+.key-points{
+    color: rgb(59, 58, 58);
+    font-size: 16px;
+   font-weight: 400;
+   line-height: 30px;
+}
+.similar-product-text{
+    margin-top: 50px;
+    font-size: 32px;
+    font-family: Helvetica;
+    font-weight: 700;
+    color: #080808;
+}
+.similar-product-names{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Helvetica;
+    color: black;
+}
+.similar-product-cost{
+    color: orange;
+    font-size: 16px;
+}
+.original-cost{
+    text-decoration: line-through;
+     margin-left: 20px;
+}
+.vegetable-product{
+    width: 275px;
+    height: 250px;
+}

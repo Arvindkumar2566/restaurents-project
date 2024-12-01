@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Activeproces.css';
 
-const backgroundImage = '/assets/images/ActiveProcess_bg.svg'; // Correct image path
+const backgroundImage = '/assets/images/ActiveProcess_bg.svg'; 
 
 export default function Activeproces() {
   const [isModalOpen, setIsModalOpen] = useState(false);

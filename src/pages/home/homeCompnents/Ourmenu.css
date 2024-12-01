@@ -1,0 +1,51 @@
+.choose-text{
+    font-family:Great Vibes;
+    color: #f4c042;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    
+}
+.from-menu {
+    font-weight: 700;
+    font-size: 48px;
+}
+.from-menu span{
+    color: #f4c042;
+    font-weight: 700;
+    font-size: 48px;
+}
+.menu-elements{
+ list-style: none;
+ 
+ font-size: 20px;
+ font-weight: 400;
+ line-height: 28px;
+}
+.breakfast{
+    color: #f4c042;
+}
+.spinach-images{
+    position: relative;
+}
+.vegetable-plate{
+    position: absolute;
+    left: 78px;
+    width: 345px;
+    top: 21px;
+}
+.lettuce-text{
+   font-size: 20px;
+   font-weight: 700; 
+   line-height: 0.5; 
+}
+.lettuce-matter{
+    font-size: 14px;
+   font-weight: 400;  
+   line-height: 0.5;
+    color: rgb(113, 112, 110);
+  
+}
+.cost{
+    color: #f4c042;
+}

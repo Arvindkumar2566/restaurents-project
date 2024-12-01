@@ -1,0 +1,174 @@
+.masala-blog{
+   width: 700px;
+   height: 500px;
+}
+.detox-text{
+    border-bottom:1px solid ;
+}
+.reasons-detox{
+text-align: justify;
+}
+.detox-text{
+    font-family: Helvetica;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.detox-matter-text{
+    text-align: left;
+}
+.readmore-button{
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: orange 1px solid;
+    color: rgb(10, 10, 10);
+    background: none;
+}
+.search-image{
+   
+   
+    height: 50px;
+    background-color: orange;
+    margin-bottom: 1px;
+   
+}
+
+.search-input {
+    width: 375px;
+    height: 50px;
+}
+.photographer-name{
+ font-size: 28px;
+ font-family:  Helvetica;
+ font-weight: 700;
+
+
+}
+.photographer{
+    border: rgb(12, 12, 12) 1px solid;
+    width: 422px;
+    height: 410px;
+    text-align: center;
+    padding: 18px;
+
+}
+.masala-blog{
+    margin-top: 7px;
+}
+.recent-post-text{
+    font-size: 20px;
+    font-family:  Helvetica;
+    font-weight: 700;
+}
+.recent-post-section{
+    width: 422px;
+    height: 592px;
+    padding: 45px;
+    border: rgb(19, 19, 19) 1px solid;
+    
+}
+.recent-post{
+    width: 100px;
+    height: 90px;
+    border-radius: 6px;
+    margin-bottom: 35px;
+
+}
+.paragraph{
+    text-align: justify;
+    
+    font-size: 14px;
+    font-weight: 400;
+}
+.recent-post-text{
+    text-align: left;
+}
+.fast-food{
+    width: 65px;
+    height: 60px;
+}
+.food-name,.food-price{
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+   
+}
+.filter-section{
+    width: 422px;
+    height: 525px;
+    padding: 45px;
+    border: rgb(19, 18, 18) 1px solid;
+    
+}
+.popular-tag-text{
+    font-family: Helvetica;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.popular-tag-name{
+    border: 1px solid;
+    padding: 10px 30px
+}
+.papular-tag-section{
+    width: 422px;
+   
+    padding: 45px;
+    border: rgb(3, 3, 3) 1px solid;
+}
+.popular-tag-font{
+    text-align: left;
+   
+}
+.masala-section,.pizza-large-section{
+    text-align: left;
+    width: 600px;
+ 
+}
+.Blogcomponent-section{
+background: white;
+gap: 140px;
+padding: 50px;
+
+}
+.photo-gallery-section{
+    width: 422px;
+    border: rgb(3, 3, 3) 1px solid;
+    padding: 45px;
+   
+}
+.photo-gallery-text{
+    text-align: left;
+    color: black;
+    font-family: Helvetica;
+    font-size: 28px;
+    font-weight: 700;
+
+}
+.follow-us{
+    width: 422px;
+    border: rgb(3, 3, 3) 1px solid;
+    padding: 45px;
+   
+}
+.follow-us-text{
+    text-align: left;
+    color: black;
+    font-family: Helvetica;
+    font-size: 28px;
+    font-weight: 700;
+}
+.follow-us a{
+    color: black;
+}
+.social-media1{
+    background: white;
+    padding: 2px;
+   margin-left: 15px;
+    height: 30px;
+    
+}
+.social-media1{
+background: wheat;
+padding: 5px 10px;
+}

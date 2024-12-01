@@ -35,7 +35,7 @@
     font-size: 48px;
     font-weight: 700;
     line-height: 1;
-    margin-left: 25px;
+   
   }
   .coffee{
     margin-left: 25px;
@@ -50,7 +50,7 @@
   }
   
   .fig-text {
-    font-size: 24px;
+    font-size: 18px;
     color: #0a0a0a;
     margin: 0;
     font-family: 
@@ -73,7 +73,10 @@
     line-height: 1;
     color: #333;
   }
-
+.coffee1{
+margin-left: -9px;
+width: 50px;
+}
   .pastry-text{
     font-size: 24px;
     font-family: 
@@ -99,5 +102,99 @@
   .dessert-item:hover {
     background-color: #f9f9f9;
     cursor: pointer;
+  }
+  .dessert-menu {
+    padding: 2rem;
+    background-color: white;
+  }
+  
+  /* Style for the product names */
+  .dessert-text {
+    font-size: 48px; /* Adjust the font size */
+    font-weight: bold; /* Make the font bold */
+    color: #333; /* Default color */
+    margin-bottom: 0.5rem; /* Space between name and description */
+    text-transform: capitalize; /* Capitalize each word */
+    transition: color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for product names */
+  .dessert-text:hover {
+    cursor: pointer; /* Pointer cursor */
+  }
+  
+  /* Menu item details */
+  .dessert-details {
+    margin-bottom: 1rem;
+  }
+  
+  /* Price styling */
+  .dessert-price {
+    font-size: 1rem;
+    color: orange;
+    font-weight: 500;
+  }
+  
+  /* General layout styles */
+  .dessert-item {
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Additional styling for description */
+  .items-description {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Image container */
+  .image-containe {
+  
+    margin-bottom: 2rem;
+  }
+  .dessert-text1{
+    color: black;
+    font-size: 48px;
+    font-weight: 700;
+    margin-left: -5px;
+  }
+  
+  .dessert-image {
+    width: 100%;
+    max-width: 400px;
+    margin-left: -5px;
+  }
+  
+ 
+  
+  /* Menu text */
+  .dessert-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .dessert-list {
+    padding: 0;
+  }
+  
+  .dessert-item:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .dessert-item .dessert-details {
+    flex: 1;
+  }
+  
+  .dessert-item .dessert-price {
+    margin-left: -5px;
+    color: orange;
+    font-weight: 600;
   }
   
