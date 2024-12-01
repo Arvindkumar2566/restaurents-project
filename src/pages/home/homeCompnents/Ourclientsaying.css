@@ -2,6 +2,7 @@
   
   .testimonials-font .section-title {
     font-family:Great Vibes;
+    text-align: center;
     color: #f4c042;
     font-size: 32px;
     font-weight: 400;
@@ -15,6 +16,7 @@
   .our-client-sayingtext {
     font-size: 48px;
     font-weight: 700;
+    text-align: center;
   }
   
   .client-card {
