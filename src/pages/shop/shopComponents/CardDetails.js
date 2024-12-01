@@ -129,7 +129,7 @@ const CardDetails = () => {
                 className="insta-icon"
               />
             </a>
-            <a href="#">
+            <a href="https://x.com/?lang=en">
               <img
                 src="/assets/images/vk-icon.svg"
                 alt="vk"
