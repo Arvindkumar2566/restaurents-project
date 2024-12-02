@@ -1,7 +1,6 @@
 import React from 'react';
 import './Homecard.css';
 
-
 const frontImage1 = '/assets/images/Homecard_1.svg';
 const frontImage2 = '/assets/images/Homecard_2.svg';
 const frontImage3 = '/assets/images/Homecard_3.svg';
