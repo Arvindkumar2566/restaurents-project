@@ -1,0 +1,71 @@
+/* Overall container */
+.sign-up-form {
+    background: linear-gradient(to bottom, #fffdf6, #f7f3e9);
+    font-family: "Arial", sans-serif;
+}
+
+/* Card styles */
+.sign-up-form__card {
+    background-color: #fff;
+    border: none;
+    border-radius: 12px;
+    width: 350px;
+}
+
+/* Title */
+.sign-up-form__title {
+    font-weight: bold;
+}
+
+/* Input group */
+.sign-up-form__input-group .sign-up-form__icon {
+    background: #fff;
+    border: 1px solid #ced4da;
+    color: #6c757d;
+}
+
+.sign-up-form__input {
+    border: 1px solid #ced4da;
+}
+
+/* Buttons */
+.sign-up-form__button {
+    background-color: #ffa500;
+    border: none;
+}
+
+.sign-up-form__button:hover {
+    background-color: #ff8c00;
+}
+
+.sign-up-form__google-btn,
+.sign-up-form__apple-btn {
+    font-size: 14px;
+}
+
+/* Divider */
+.sign-up-form__divider {
+    font-size: 14px;
+}
+
+/* Remember me */
+.sign-up-form__remember {
+    display: flex;
+    align-items: center;
+}
+
+/* Forgot password */
+.sign-up-form__forgot {
+    font-size: 14px;
+}
+
+.sign-up-form__link {
+    color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .sign-up-form__card {
+        width: 90%;
+    }
+}

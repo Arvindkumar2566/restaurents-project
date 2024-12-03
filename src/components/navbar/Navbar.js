@@ -136,6 +136,11 @@ function Navbar({ size }) {
               style={{ cursor: 'pointer' }}
             />
             <span className='count1'>{size}</span>
+            <li className="nav-item">
+                <NavLink className="nav-link" to="/signup" activeclassname="active-link">
+                  signup
+                </NavLink>
+              </li>
           </form>
         </div>
       </nav>

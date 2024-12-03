@@ -85,7 +85,7 @@ const Blogdetailsbody = () => {
               </div>
               <div>
               <span className='tag-text'>Tags:</span>
-              <img src='/assets/images/fb1.svg' className='icons1'/>
+              <img src='' className='icons1'/>
               <img src='/assets/images/x.svg' className='icons1'/>
               <img src='/assets/images/youtube.svg 'className='icons1'/>
               <img src='/assets/images/followp.svg'className='icons1'/>
