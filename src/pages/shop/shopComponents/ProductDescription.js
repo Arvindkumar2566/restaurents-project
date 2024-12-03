@@ -26,9 +26,9 @@ export default function ProductDescription() {
                 <li>consectetur adipisicing elit. Quidem sunt magni deserunt quaerat</li>
             </ul>
         </div>
-        <div className='similar-product'>
+        <div className='similar-product '>
             <p className='similar-product-text'> Similar Product</p>
-            <div className='d-flex justify-content-between'>
+            <div className='d-flex col-sm-10 mx-5'>
             <div>
                 <img src='/assets/images/plates-spoon.svg' alt='vegetable' className='vegetable-product'/>
                 <p className='similar-product-names'>Fresh lime</p>

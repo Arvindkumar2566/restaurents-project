@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./CardDetails.css";
 
-const CardDetails = () => {
+const CardDetails = ({item,CartHandler}) => {
+  
   const location = useLocation();
   const productDetails = location.state || {};
 
@@ -26,7 +27,6 @@ const CardDetails = () => {
       <div className="sub-item-images">
         <img
           src="/assets/images/sub-item1.svg"
-
           alt="sub-item"
           className="sub-item mb-2"
         />
@@ -91,12 +91,12 @@ const CardDetails = () => {
             <button className="increment-btn" onClick={incrementQuantity}>
               +
             </button>
-            <button className="add-cart-text">🛒 Add to cart</button>
+            <button className="add-cart-text"  onClick={() => CartHandler({ ...item, quantity })}>🛒 Add to cart</button>
           </div>
 
           <div>
             <span className="text-dark ml-1">♡ Add to Wishlist</span>
-            <span className="text-dark">⚖️ Compare</span>
+            <span className="text-dark">⚖ Compare</span>
           </div>
 
           <p className="text-dark mt-4">
@@ -143,4 +143,4 @@ const CardDetails = () => {
   );
 };
 
-export default CardDetails;
+export default CardDetails;

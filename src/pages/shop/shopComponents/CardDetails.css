@@ -1,70 +1,80 @@
+.catr-item-name {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}
 
-.catr-item-name{
- font-size: 48px;
- font-weight: 700;
- line-height: 56px;   
+.rating-section {
+  display: "flex";
+  align-items: "center";
+  gap: "10px";
 }
-.rating-section{
-    display: "flex";
-     align-items: "center";
-      gap: "10px";
+
+.decrement-btn {
+  background: white;
+  border: 1px solid;
+  padding: 3px 21px
 }
-.decrement-btn{
-    background:white;
-    border: 1px solid;
-    padding: 3px 21px
+
+.increment-btn {
+  background: white;
+  border: 1px solid;
+  padding: 3px 21px
 }
-.increment-btn{
-    background: white;
-    border: 1px solid;
-    padding: 3px 21px
-    
+
+.count {
+  padding: 6px 15px;
+  background-color: white;
+  color: black;
 }
-.count{
-    padding: 6px 15px;
-    background-color: white;
-    color: black;
-}
+
 .sub-item-images {
-    width: 130px;
-  
-    gap: 10px; 
-  }
-  
-  .sub-item {
-    margin-left: 5px; 
-  }
-  .cart-product{
-    width: 450px;
-    height: 540px;
-   
-  }
-  .carddetail-section{
-    background-color: white;
-    padding: 50px;
-    gap: 25px;
-   
-  }
-  .stock-text {
-    background-color: orange;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  .yummy-chicken-matter{
-    margin-top: 30px;
-  }
-  .cost-section{
-margin-top: 20px;
-  }
-  .add-cart-text{
-background-color: orange;
-color: white;
-border: white 1px ;
-padding: 5px;
-margin-left: 10px;
-border-radius: 2px;
-  }
-  .insta-icon{
-    margin-left: 10px;
-  }
+  width: 130px;
+
+  gap: 10px;
+}
+
+.sub-item {
+  margin-left: 5px;
+}
+
+.cart-product {
+  width: 450px;
+  height: 540px;
+
+}
+
+.carddetail-section {
+  background-color: white;
+  padding: 50px;
+  gap: 25px;
+
+}
+
+.stock-text {
+  background-color: orange;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.yummy-chicken-matter {
+  margin-top: 30px;
+}
+
+.cost-section {
+  margin-top: 20px;
+}
+
+.add-cart-text {
+  background-color: orange;
+  color: white;
+  border: white 1px;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 2px;
+}
+
+.insta-icon {
+  margin-left: 10px;
+}

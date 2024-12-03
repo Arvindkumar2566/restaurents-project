@@ -1,0 +1,100 @@
+.blogdetails-section {
+    background: white;
+    gap: 25px;
+    padding: 50px;
+}
+
+.important-note {
+    background: orange;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.imoprtant-matter {
+    font-size: 17px;
+    font-weight: 700;
+    font-family: Helvetica;
+    padding: 20px;
+
+}
+
+.quote {
+    padding: 18px 1px 10px 10px;
+}
+
+.tag-text {
+    font-size: 20px;
+    font-weight: 700;
+
+
+}
+
+.icons1 {
+    padding: 10px;
+}
+
+.tags {
+    border: 1px white solid;
+    padding: 10px;
+}
+
+.comment-text {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.md-section,
+.md2-section {
+    gap: 25px;
+}
+
+.reply {
+    margin-bottom: 13px;
+    margin-left: 15px;
+}
+
+.md2-section {
+    margin-left: 112px;
+}
+
+.chicken-soop-section {
+    gap: 10px;
+}
+
+.search-input1 {
+    width: 370px;
+    height: 50px;
+}
+
+.post-comment-text {
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.commenter-name,
+.commenter-email {
+    width: 350px;
+    height: 56px;
+
+}
+
+.commenter-email {
+    margin-left: 20px;
+}
+
+.text-area {
+    width: 720px;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.post-comment {
+    background: orange;
+    color: white;
+    padding: 15px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
