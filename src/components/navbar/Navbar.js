@@ -1,10 +1,16 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './Navbar.css';
 
-function Navbar() {
+function Navbar({ size }) {
+  const navigate = useNavigate(); 
+
+  const handleCartClick = () => {
+    navigate('/cart'); 
+  };
+
   return (
     <>
       <center>
@@ -14,7 +20,6 @@ function Navbar() {
       </center>
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container-fluid">
-          {/* Navbar Toggler for Collapsing */}
           <button
             className="navbar-toggler"
             type="button"
@@ -40,17 +45,32 @@ function Navbar() {
                   Menu
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/blog" activeclassname="active-link">
+              {/* Blog Dropdown */}
+              <li className="nav-item dropdown">
+                <NavLink
+                  className="nav-link dropdown-toggle"
+                  to="/blog"
+                  id="blogDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Blog
                 </NavLink>
+                <ul className="dropdown-menu" aria-labelledby="blogDropdown">
+                  <li>
+                    <NavLink className="dropdown-item" to="/blog/blog">
+                      Blog
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink className="dropdown-item" to="/blog/blogdetails">
+                      Blog Details
+                    </NavLink>
+                  </li>
+                </ul>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/pages" activeclassname="active-link">
-                  Pages
-                </NavLink>
-              </li>
-              {/* About Dropdown */}
+             
               <li className="nav-item dropdown">
                 <NavLink
                   className="nav-link dropdown-toggle"
@@ -93,7 +113,6 @@ function Navbar() {
             </ul>
           </div>
 
-          {/* Search Bar */}
           <form className="d-flex ms-auto" role="search">
             <input
               className="form-control search"
@@ -113,7 +132,10 @@ function Navbar() {
               src="/assets/images/bag.png"
               alt="Logo"
               className="bag"
+              onClick={handleCartClick} 
+              style={{ cursor: 'pointer' }}
             />
+            <span className='count1'>{size}</span>
           </form>
         </div>
       </nav>
@@ -121,4 +143,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar;
