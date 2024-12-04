@@ -1,21 +1,11 @@
-.signin {
-    color: #000;
-    text-decoration: none;
-}
-
-.signin:hover {
-    background-color: #e89600;
-    border-radius: 20px;
-    color: #ffffff !important;
-    text-decoration: none;
-    width: 21%;
-}
+/* src/pages/login/Register.css */
 
 .signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100vh;
 }
 
 .signup-box {
@@ -93,7 +83,7 @@
     color: #888;
 }
 
-.signup-social-signup {
+.signup-social-signin {
     display: flex;
     flex-direction: column;
     gap: 10px;

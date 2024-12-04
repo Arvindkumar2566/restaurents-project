@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { auth } from "../../Firebase"; // Correct import path
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import "./Register.css";
 
 const Register = () => {
@@ -10,19 +12,30 @@ const Register = () => {
 
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     if (password !== confirmPassword) {
       alert("Passwords do not match");
       return;
     }
 
-    // Save user data to localStorage
-    localStorage.setItem("user", JSON.stringify({ name, email, password }));
+    try {
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
 
-    // Redirect to Sign In page
-    navigate("/signin");
+      // Save the user's data (name, email) in localStorage
+      const userData = {
+        name: name, // The username provided during registration
+        email: user.email, // Firebase email
+      };
+      localStorage.setItem("user", JSON.stringify(userData)); // Store in localStorage
+
+      alert("Sign-up successful!");
+      navigate("/signin"); // Redirect to Sign In page after successful signup
+    } catch (error) {
+      alert(error.message); // Show the error message if sign up fails
+    }
   };
 
   return (
@@ -84,19 +97,6 @@ const Register = () => {
             </Link>
           </span>
         </form>
-        <div className="signup-divider">
-          <hr className="signup-hr" />
-          <span className="signup-divider-text">OR</span>
-          <hr className="signup-hr" />
-        </div>
-        <div className="signup-social-signup">
-          <button className="signup-btn-social signup-google">
-            <i className="fab fa-google signup-social-icon"></i> Sign up with Google
-          </button>
-          <button className="signup-btn-social signup-apple">
-            <i className="fab fa-apple signup-social-icon"></i> Sign up with Apple
-          </button>
-        </div>
       </div>
     </div>
   );

@@ -1,28 +1,35 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { auth } from "../../Firebase"; // Correct import path
+import { signInWithEmailAndPassword } from "firebase/auth";
 import "./Signin.css";
 
-const Signin = () => {
+const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    // Retrieve stored user data from localStorage
-    const storedUser = JSON.parse(localStorage.getItem("user"));
 
-    if (!storedUser) {
-      alert("No user found. Please sign up first.");
-      return;
-    }
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
 
-    if (storedUser.email === email && storedUser.password === password) {
+      // Assume user name is saved in Firestore or Firebase Realtime Database
+      const username = user.displayName || "User"; // If Firebase stores a display name
+
+      // Save both the username and email in localStorage
+      const userData = {
+        name: username,
+        email: user.email,
+      };
+      localStorage.setItem("user", JSON.stringify(userData));
+
       alert("Sign-in successful!");
-      navigate("/home"); // Redirect to Menu page after successful sign-in
-    } else {
-      alert("Invalid email or password.");
+      navigate("/home"); // Redirect to home page after successful sign-in
+    } catch (error) {
+      alert(error.message);
     }
   };
 
@@ -58,27 +65,14 @@ const Signin = () => {
           </button>
           <span className="m-0 d-flex text-secondary">
             Don't have an account?
-            <Link className="signin ms-2" to="/register">
+            <Link className="signup ms-2" to="/register">
               Sign Up
             </Link>
           </span>
         </form>
-        <div className="signin-divider">
-          <hr className="signin-hr" />
-          <span className="signin-divider-text">OR</span>
-          <hr className="signin-hr" />
-        </div>
-        <div className="signin-social-signin">
-          <button className="signin-btn-social signin-google">
-            <i className="fab fa-google signin-social-icon"></i> Sign in with Google
-          </button>
-          <button className="signin-btn-social signin-apple">
-            <i className="fab fa-apple signin-social-icon"></i> Sign in with Apple
-          </button>
-        </div>
       </div>
     </div>
   );
 };
 
-export default Signin;
+export default SignIn;

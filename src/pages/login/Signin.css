@@ -1,21 +1,11 @@
-.signin {
-    color: #000;
-    text-decoration: none;
-}
-
-.signin:hover {
-    background-color: #e89600;
-    border-radius: 20px;
-    color: #ffffff !important;
-    text-decoration: none;
-    width: 21%;
-}
+/* src/pages/login/SignIn.css */
 
 .signin-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100vh;
 }
 
 .signin-box {
