@@ -137,7 +137,7 @@ function Navbar({ size }) {
             />
             <span className='count1'>{size}</span>
             <li className="nav-item">
-                <NavLink className="nav-link" to="/signup" activeclassname="active-link">
+                <NavLink className="nav-link" to="/Register" activeclassname="active-link">
                   signup
                 </NavLink>
               </li>

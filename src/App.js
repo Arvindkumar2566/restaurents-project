@@ -18,8 +18,10 @@ import CardDetails from './pages/shop/shopComponents/CardDetails';
 import ProductDescription from './pages/shop/shopComponents/ProductDescription';
 import Ourchef from './pages/OurChef/Ourchef';
 import Cart from './pages/cart/Cart'; // Ensure this path is correct
-import SignUpForm from "./components/signup/SignUpForm";
+
 import './App.css';
+import Register from './pages/login/Register';
+import Signin from './pages/login/Signin';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -48,11 +50,13 @@ function App() {
           <Route path="/about/mangos" element={<Mangos />} />
           <Route path="/about/apple" element={<Apple />} />
           <Route path="/about/bananas" element={<Bananas />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/signin" element={<Signin />} />
           <Route path="/starter" element={<Starter />} />
           <Route path="/card-details" element={<CardDetails/>} />
           <Route path="/product-description" element={<ProductDescription />} />
           <Route path="/ourchef" element={<Ourchef />} />
-          <Route path="/signup" element={<SignUpForm />} />
+         
         </Routes>
       </div>
       <Footer />
