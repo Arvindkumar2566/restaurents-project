@@ -10,7 +10,7 @@ function Shop({cart,CartHandler}) {
       <Ourshopheader />
       <CardDetails CartHandler={CartHandler} />
       <ProductDescription/>
-      hi
+     
     </div>
   );
 }
