@@ -215,5 +215,9 @@ function Navbar({ size }) {
     </>
   );
 }
+<<<<<<< HEAD
 
 export default Navbar;
+=======
+ export default Navbar;
+>>>>>>> 296f4d9e70cfdb2deae6a6fab4c5263a499a80d2
