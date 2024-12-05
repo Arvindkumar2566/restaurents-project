@@ -5,6 +5,10 @@ import Footer from './components/footer/Footer';
 import Home from './pages/home/Home';
 import Menu from './pages/menu/Menu';
 import Blog from './pages/blog/Blog';
+<<<<<<< HEAD
+=======
+import BlogDetails from './pages/blogDetails/Blogdetails'; // Updated path
+>>>>>>> 7c81162a50e60ca80ea22c61828fd2d09986fe21
 import Pages from './pages/page/Page';
 import BlogDetails from './pages/blogDetails/Blogdetails';
 import Shop from './pages/shop/Shop';
