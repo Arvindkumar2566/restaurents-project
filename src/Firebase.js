@@ -1,7 +1,7 @@
 // src/Firebase.js
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-
+import { createUserWithEmailAndPassword } from "firebase/auth";
 const firebaseConfig = {
   apiKey: "AIzaSyBs_jr5oj6RIR-4QbUsNVLjk-lWfDF8_pQ",
   authDomain: "restaurant2566.firebaseapp.com",
