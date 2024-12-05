@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { auth, db } from "../../Firebase"; // Import auth and db from Firebase
-import { createUserWithEmailAndPassword } from "firebase/auth"; // Firebase Auth import
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth"; // Firebase Auth imports
 import { setDoc, doc } from "firebase/firestore"; // Firestore imports
 import "./Register.css";
 
@@ -11,24 +11,39 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [mobile, setMobile] = useState("");
+  const [loading, setLoading] = useState(false); // Loading state
 
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Password validation
     if (password !== confirmPassword) {
       alert("Passwords do not match");
       return;
     }
+    if (password.length < 8 || !/[A-Z]/.test(password) || !/\d/.test(password)) {
+      alert(
+        "Password must be at least 8 characters long and include at least one uppercase letter and one number."
+      );
+      return;
+    }
 
+    // Mobile number validation
+    if (!/^\d{10}$/.test(mobile)) {
+      alert("Please enter a valid 10-digit mobile number");
+      return;
+    }
+
+    setLoading(true); // Start loading
     try {
       // Create a new user with email and password
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      const user = userCredential.user; // Firebase User Object
+      const user = userCredential.user;
 
-      // Update the user's displayName (Name)
-      await user.updateProfile({
+      // Update the user's displayName
+      await updateProfile(user, {
         displayName: name, // Set the displayName
       });
 
@@ -39,17 +54,12 @@ const Register = () => {
         mobile: mobile, // Store the mobile number
       });
 
-      // Save user data in localStorage
-      const userData = {
-        name: name,
-        email: user.email,
-      };
-      localStorage.setItem("user", JSON.stringify(userData));
-
       alert("Sign-up successful!");
       navigate("/signin"); // Redirect to Sign In page after successful signup
     } catch (error) {
       alert(error.message); // Show error message if sign-up fails
+    } finally {
+      setLoading(false); // Stop loading
     }
   };
 
@@ -113,8 +123,8 @@ const Register = () => {
               required
             />
           </div>
-          <button type="submit" className="signup-btn-submit">
-            Sign Up
+          <button type="submit" className="signup-btn-submit" disabled={loading}>
+            {loading ? "Signing Up..." : "Sign Up"}
           </button>
           <span className="m-0 d-flex text-secondary">
             Already have an account?
