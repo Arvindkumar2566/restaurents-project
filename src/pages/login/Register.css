@@ -1,0 +1,120 @@
+/* src/pages/login/Register.css */
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.signup-box {
+    background: #ffffff;
+    width: 350px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.signup-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.signup-input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 8px 15px;
+    background-color: #f9f9f9;
+}
+
+.signup-icon {
+    color: #bbb;
+    margin-right: 10px;
+}
+
+.signup-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    background: transparent;
+    font-size: 14px;
+}
+
+.signup-btn-submit {
+    background-color: #f7a500;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-btn-submit:hover {
+    background-color: #e89600;
+}
+
+.signup-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.signup-hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.signup-divider-text {
+    font-size: 14px;
+    color: #888;
+}
+
+.signup-social-signin {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.signup-btn-social {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.signup-google {
+    background-color: #db4437;
+    color: white;
+}
+
+.signup-apple {
+    background-color: #000;
+    color: white;
+}
+
+.signup-google:hover {
+    background-color: #c33c2d;
+}
+
+.signup-apple:hover {
+    background-color: #333;
+}
