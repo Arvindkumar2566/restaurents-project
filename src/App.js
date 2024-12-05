@@ -18,6 +18,9 @@ import CardDetails from './pages/shop/shopComponents/CardDetails';
 import ProductDescription from './pages/shop/shopComponents/ProductDescription';
 import Ourchef from './pages/OurChef/Ourchef';
 import Cart from './pages/cart/Cart'; // Ensure this path is correct
+import UserDetail from './pages/login/UserDetails';
+
+
 
 import './App.css';
 import Register from './pages/login/Register';
@@ -56,6 +59,7 @@ function App() {
           <Route path="/card-details" element={<CardDetails/>} />
           <Route path="/product-description" element={<ProductDescription />} />
           <Route path="/ourchef" element={<Ourchef />} />
+          <Route path="/login/user-details" element={<UserDetail />} />
          
         </Routes>
       </div>

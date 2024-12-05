@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { auth } from "../../Firebase"; // Correct import path
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth, db } from "../../Firebase"; // Import auth and db from Firebase
+import { createUserWithEmailAndPassword } from "firebase/auth"; // Firebase Auth import
+import { setDoc, doc } from "firebase/firestore"; // Firestore imports
 import "./Register.css";
 
 const Register = () => {
@@ -9,6 +10,7 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [mobile, setMobile] = useState("");
 
   const navigate = useNavigate();
 
@@ -21,20 +23,33 @@ const Register = () => {
     }
 
     try {
+      // Create a new user with email and password
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      const user = userCredential.user;
+      const user = userCredential.user; // Firebase User Object
 
-      // Save the user's data (name, email) in localStorage
+      // Update the user's displayName (Name)
+      await user.updateProfile({
+        displayName: name, // Set the displayName
+      });
+
+      // Save user data (name, email, mobile) to Firestore
+      await setDoc(doc(db, "users", user.uid), {
+        name: name,
+        email: user.email, // Store the Firebase email
+        mobile: mobile, // Store the mobile number
+      });
+
+      // Save user data in localStorage
       const userData = {
-        name: name, // The username provided during registration
-        email: user.email, // Firebase email
+        name: name,
+        email: user.email,
       };
-      localStorage.setItem("user", JSON.stringify(userData)); // Store in localStorage
+      localStorage.setItem("user", JSON.stringify(userData));
 
       alert("Sign-up successful!");
       navigate("/signin"); // Redirect to Sign In page after successful signup
     } catch (error) {
-      alert(error.message); // Show the error message if sign up fails
+      alert(error.message); // Show error message if sign-up fails
     }
   };
 
@@ -62,6 +77,17 @@ const Register = () => {
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div className="signup-input-group">
+            <i className="fas fa-phone signup-icon"></i>
+            <input
+              type="text"
+              className="signup-input"
+              placeholder="Mobile Number"
+              value={mobile}
+              onChange={(e) => setMobile(e.target.value)}
               required
             />
           </div>
