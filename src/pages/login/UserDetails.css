@@ -1,0 +1,96 @@
+/* General Reset and Global Styles */
+
+
+/* UserDetail Page Container */
+.user-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Profile Image */
+.profile-card img.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* User Name */
+.profile-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* User Email */
+.profile-card p.email {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.profile-card button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-card button:hover {
+    background-color: #e67e22;
+}
+
+.profile-card .btn-signout {
+    background-color: #c0392b;
+}
+
+.profile-card .btn-signout:hover {
+    background-color: #e74c3c;
+}
+
+/* Edit Profile and Sign Out Section */
+.profile-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.profile-actions .action-button {
+    width: 48%;
+}
+
+@media (max-width: 768px) {
+    .profile-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .profile-card h2 {
+        font-size: 20px;
+    }
+
+    .profile-card p.email {
+        font-size: 14px;
+    }
+}

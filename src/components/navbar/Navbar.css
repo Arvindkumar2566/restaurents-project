@@ -128,3 +128,19 @@
     padding: 1px;
 
 }
+.nav-item {
+    list-style: none;
+    /* Removes bullets */
+    padding: 0;
+    margin: 0;
+}
+
+
+.profile {
+    background-color: orange;
+    width: 35px;
+    text-align: center;
+    padding-top: 7px;
+   
+    border-radius: 50%;
+}
