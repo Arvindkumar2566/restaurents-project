@@ -8,6 +8,7 @@ import Blog from './pages/blog/Blog';
 import Pages from './pages/page/Page';
 import BlogDetails from './pages/blogDetails/Blogdetails';
 import Shop from './pages/shop/Shop';
+
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
 import Mangos from './pages/about/Mangos';
