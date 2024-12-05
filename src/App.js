@@ -5,7 +5,7 @@ import Footer from './components/footer/Footer';
 import Home from './pages/home/Home';
 import Menu from './pages/menu/Menu';
 import Blog from './pages/blog/Blog';
-import BlogDetails from './pages/BlogDetails/Blogdetails'; // Updated path
+import BlogDetails from './pages/blogDetails/Blogdetails'; // Updated path
 import Pages from './pages/page/Page';
 import Shop from './pages/shop/Shop';
 import Contact from './pages/contact/Contact';
@@ -47,7 +47,7 @@ function App() {
           <Route path="/blog/blogdetails" element={<BlogDetails />} />
           <Route path="/pages" element={<Pages />} />
           <Route path="/shop" element={<Shop cart={cart} CartHandler={CartHandler} />} />
-          <Route path="/cart" element={<Cart cart={cart} />} /> {/* Fixed duplicate route */}
+          <Route path="/cart" element={<Cart cart={cart} />} /> 
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/about/mangos" element={<Mangos />} />
@@ -68,4 +68,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;

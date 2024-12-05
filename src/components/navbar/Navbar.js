@@ -216,4 +216,4 @@ function Navbar({ size }) {
   );
 }
 
-// export default Navbar;
+export default Navbar;
