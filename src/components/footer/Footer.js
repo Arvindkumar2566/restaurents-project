@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="footer mt-5 text-white">
       {/* Email and Subscribe Section */}
-      <div className="container text-center py-4 d-flex justify-content-between">
+      <div className="container text-center py-4  footer-mail">
        <div>
        <h2>
           <span className="text-warning ">Still</span> Need Our Support?
@@ -75,7 +75,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/contacts" className="text-decoration-none text-white">
+                <Link to="/contact" className="text-decoration-none text-white">
                   Contacts
                 </Link>
               </li>
@@ -138,7 +138,7 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="yellow-bar d-flex justify-content-between align-items-center">
         <p className="mb-0">Copyright © 2022 by Ayeman. All Rights Reserved.</p>
-        <div>
+        <div className="social-media-icons">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             <img src="/assets/images/fb1.svg" alt="Facebook" className="me-2 social-media" />
           </a>

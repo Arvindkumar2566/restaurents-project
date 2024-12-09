@@ -4,7 +4,8 @@ import './Checkoutpagebody.css'
 const Checkoutpagebody = () => {
   return (
     <div>
-     
+   
+    
     </div>
   )
 }
