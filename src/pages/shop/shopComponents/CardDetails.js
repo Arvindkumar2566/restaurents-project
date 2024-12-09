@@ -31,7 +31,7 @@ const CardDetails = ({ CartHandler }) => {
 
   return (
     <div className="carddetail-section d-flex container">
-      {/* Left Image Section */}
+    
       <div className="sub-item-images">
         {[1, 2, 3, 4].map((num) => (
           <img
@@ -119,7 +119,7 @@ const CardDetails = ({ CartHandler }) => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src={`/assets/images/${platform}-icon.svg`}
+                  src={`/assets/images/insta-icon.svg`}
                   alt={platform}
                   className="insta-icon"
                 />

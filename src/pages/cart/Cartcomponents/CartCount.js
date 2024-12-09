@@ -1,29 +1,28 @@
 import React, { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./CartCount.css";
 
 export default function CartCount({ cart, setCart }) {
+  const navigate=useNavigate();
+  const checkout =()=>{
+    navigate('./checkoutpage')
+  }
   if (!cart || cart.length === 0) {
     return <p>Your cart is empty.</p>;
   }
- 
 
- 
   const calculateTotal = () => {
-   return cart .reduce((total, item) => total + item.price * item.quantity, 0)
-      .toFixed(2);
+    return cart.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
   };
 
   const incrementQuantity = (id) => {
     setCart((prevItems) =>
       prevItems.map((item) =>
-        item.id === id
-          ? { ...item, quantity: item.quantity + 1 }
-          : item
+        item.id === id ? { ...item, quantity: item.quantity + 1 } : item
       )
     );
   };
 
-  // Decrement quantity
   const decrementQuantity = (id) => {
     setCart((prevItems) =>
       prevItems.map((item) =>
@@ -34,14 +33,15 @@ export default function CartCount({ cart, setCart }) {
     );
   };
 
-  // Remove item from cart
   const removeItem = (id) => {
-    setCart((prevItems) => prevItems.filter((item) => item.id !== id));
+    if (window.confirm("Are you sure you want to remove this item?")) {
+      setCart((prevItems) => prevItems.filter((item) => item.id !== id));
+    }
   };
 
   return (
     <div className="cart-container container">
-      <h2>Your Cart</h2>
+      <h2 className="cart-name">Your Cart</h2>
       {cart.length > 0 ? (
         <>
           <div className="cart-items">
@@ -87,7 +87,7 @@ export default function CartCount({ cart, setCart }) {
           <div className="cart-summary">
             <h3>Cart Summary</h3>
             <p>Total: ${calculateTotal()}</p>
-            <button className="checkout-btn">Proceed to Checkout</button>
+            <button className="checkout-btn" onClick={checkout}>Proceed to Checkout</button>
           </div>
         </>
       ) : (
