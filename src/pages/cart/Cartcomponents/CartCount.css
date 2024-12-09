@@ -2,6 +2,13 @@
     background: white;
     color: black;
   }
+  .cart-name{
+    font-size: 48px;
+        text-align: center;
+        font-family: emoji;
+        /* color: orange; */
+        font-weight: 700;
+  }
   
   .cart-items {
     display: flex;
@@ -28,7 +35,7 @@
   .cart-item-details {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+   
   }
   
   .cart-item-name {

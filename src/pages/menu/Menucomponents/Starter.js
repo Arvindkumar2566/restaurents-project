@@ -6,6 +6,7 @@ export default function Starter() {
   const navigate = useNavigate();
 
   const handleNavigation = (path, productDetails) => {
+    localStorage.setItem('selectedProduct', JSON.stringify(productDetails)); // Save product details
     navigate(path, { state: productDetails });
   };
 
