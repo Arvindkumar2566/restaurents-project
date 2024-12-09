@@ -8,7 +8,7 @@ const Checkoutpage = () => {
     
   return (
     <div>
-        <Checkoutpageheader/>
+    <Checkoutpageheader/>
    <Checkoutpagebody/>
    anil
     </div>
