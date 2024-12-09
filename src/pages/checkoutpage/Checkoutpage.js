@@ -10,7 +10,6 @@ const Checkoutpage = () => {
     <div>
     <Checkoutpageheader/>
    <Checkoutpagebody/>
-   anil
     </div>
   )
 }
