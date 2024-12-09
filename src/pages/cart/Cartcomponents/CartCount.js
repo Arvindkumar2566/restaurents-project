@@ -5,7 +5,7 @@ import "./CartCount.css";
 export default function CartCount({ cart, setCart }) {
   const navigate=useNavigate();
   const checkout =()=>{
-    navigate('/cart')
+    navigate('/checkoutpage')
   }
   if (!cart || cart.length === 0) {
     return <p>Your cart is empty.</p>;
