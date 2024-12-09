@@ -8,6 +8,6 @@ export default function Cart() {
     <div>
       <Cartheader />
       <CartCount />
-    </div>
-  );
+    </div>
+  );
 }
