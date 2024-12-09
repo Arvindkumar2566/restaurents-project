@@ -1,13 +1,14 @@
 import React from 'react';
-import './Contact.css';
+import ProductPage from './contactComponents/ProductPage';
 
-function Contact() {
+
+const Contact = () => {
   return (
-    <div className="contact">
-      <h1>Contact Us</h1>
-      <p>We'd love to hear from you.</p>
+    <div className="contact text-dark">
+      <h1>Contact Page</h1>
+      <ProductPage />
     </div>
   );
-}
+};
 
 export default Contact;

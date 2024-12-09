@@ -42,7 +42,8 @@
 .lettuce-matter{
     font-size: 14px;
    font-weight: 400;  
-   line-height: 0.5;
+   line-height: 1.5;
+   margin: 5px;
     color: rgb(113, 112, 110);
   
 }

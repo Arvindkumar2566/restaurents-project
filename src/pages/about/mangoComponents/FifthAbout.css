@@ -1,0 +1,105 @@
+.fifth-about-container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+.fifth-about-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fifth-about-header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.fifth-about-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.fifth-about-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.fifth-about-tab-btn {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.fifth-about-tab-btn:hover {
+    background-color: #f0a500;
+    color: white;
+}
+
+.fifth-about-tab-btn.active {
+    background-color: #f0a500;
+    color: #fff;
+    border-radius: 25px 0px ;
+}
+
+.fifth-about-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fifth-about-item-container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.fifth-about-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.fifth-about-item-details {
+    flex: 1;
+}
+
+.fifth-about-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.fifth-about-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.fifth-about-item-price {
+    font-size: 1.2rem;
+    color: #f0a500;
+}
+
+.fifth-about-view-menu-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fifth-about-view-menu-btn button {
+    padding: 10px 20px;
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.fifth-about-view-menu-btn button:hover {
+    background-color: #f0a500;
+}
+.fifth-about-item:hover{
+    padding: 5px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 7px;
+}

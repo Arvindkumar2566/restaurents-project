@@ -1,0 +1,8 @@
+.product-page {
+    display: flex;
+    padding: 20px;
+}
+
+.product-page>div {
+    flex: 1;
+}
