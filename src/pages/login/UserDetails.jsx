@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { getDoc, doc } from "firebase/firestore"; // Import Firestore functions
 import { db } from "../../Firebase"; // Import Firestore db instance
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import "./UserDetails.css";
 
 const UserDetail = () => {
@@ -55,6 +55,11 @@ const UserDetail = () => {
           <p>Email: {userDetails.email}</p>
           <p>Display Name: {userDetails.displayName}</p>
           <p>Mobile: {userDetails.mobile}</p> {/* Display mobile number */}
+          <Link className="dropdown-item" to="/home">
+              <button type="button" className="btn ">
+                Home
+              </button>
+          </Link>
         </div>
       ) : (
         <p>Loading...</p>
