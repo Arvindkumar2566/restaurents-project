@@ -3,11 +3,11 @@ import Searchfoodheader from './searchcomponents/Searchfoodheader'
 import Searchfoodbody from './searchcomponents/Searchfoodbody'
 import './Searchfooditems.css'
 
-const Searchfooditems = ({search,setSearch}) => {
+const Searchfooditems = ({data}) => {
   return (
     <div>
       <Searchfoodheader/>
-      <Searchfoodbody search={search} setSearch={setSearch}/>
+      <Searchfoodbody />
 
     </div>
   )
