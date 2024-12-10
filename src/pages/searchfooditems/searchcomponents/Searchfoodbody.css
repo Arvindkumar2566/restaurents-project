@@ -1,0 +1,51 @@
+.search-food-container {
+    padding: 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .meal-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+  }
+  
+  .meal-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .meal-info {
+    padding: 10px;
+  }
+  
+  .meal-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .meal-description {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .view-details-btn {
+    background-color: #f8a200;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .view-details-btn:hover {
+    background-color: #d97d00;
+  }
+  

@@ -1,0 +1,53 @@
+/* General Styles for OurMenu */
+.shop-details {
+    background-image: url("/public/assets/images/OurMenu.png");
+    background-size: cover;
+    height: 269px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.shop-details-content {
+    color: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px;
+        width: 90%;
+}
+
+.shop-details h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.shop-details-text{
+    color:orange;
+}
+.shop-details h2 {
+    font-size: 20px;
+    margin-bottom:15px;
+    font-weight: 400;
+}
+.readmore-button:hover{
+    background:orange;
+    color: white;
+
+}
+
+.shop-details h3 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .shop-details-content {
+        width: 80%;
+       
+    }
+}

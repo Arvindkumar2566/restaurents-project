@@ -23,6 +23,7 @@ import Register from './pages/login/Register';
 import Signin from './pages/login/Signin';
 import Checkoutpage from './pages/checkoutpage/Checkoutpage';
 import './App.css';
+import Searchfooditems from './pages/searchfooditems/Searchfooditems';
 
 function App() {
   const [cart, setCart] = useState(() => {
@@ -89,6 +90,7 @@ function App() {
           <Route path="/ourchef" element={<Ourchef />} />
           <Route path="/login/user-details" element={<UserDetail />} />
           <Route path='/checkoutpage' element={<Checkoutpage/>}/>
+          <Route path='/searchfood' element={<Searchfooditems/>}/>
           
         </Routes>
       </div>
