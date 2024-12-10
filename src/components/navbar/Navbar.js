@@ -89,6 +89,34 @@ function Navbar({ size }) {
                   Blog
                 </NavLink>
               </li>
+              <li className="nav-item dropdown">
+                <NavLink
+                  className="nav-link dropdown-toggle"
+                  to="/about"
+                  id="aboutDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  About
+                </NavLink>
+                <ul className="dropdown-menu" aria-labelledby="aboutDropdown">
+                  <li>
+                    <NavLink className="dropdown-item" to="/about/mangos">
+                      Mangos
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink className="dropdown-item" to="/about/apple">
+                      Apple
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink className="dropdown-item" to="/about/bananas">
+                      Bananas
+                    </NavLink>
+                  </li>
+                </ul>
+              </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/shop">
                   Shop
