@@ -1,13 +1,13 @@
-.user-detail{
+.user-detail {
     background-color: white;
-        color: black;
-        text-align: center;
-        width: 45%;
-        padding: 33px 0px;
-        font-size: 16px;
-        font-weight: 500;
-        box-shadow: 0px 0px 3px 6px white;
-        border-radius: 20px;
-        margin-top: 34px;
-        margin-left: 30%;
+    color: black;
+    text-align: center;
+    width: 45%;
+    padding: 33px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0px 0px 3px 6px white;
+    border-radius: 20px;
+    margin-top: 34px;
+    margin-left: 30%;
 }
