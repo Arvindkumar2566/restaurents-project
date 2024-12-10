@@ -90,6 +90,7 @@ function App() {
           <Route path="/ourchef" element={<Ourchef />} />
           <Route path="/login/user-details" element={<UserDetail />} />
           <Route path='/checkoutpage' element={<Checkoutpage cart={cart} setCart={setCart} />}/>
+          <Route path='/searchfood' element={<Searchfooditems/>}/>
           
         </Routes>
       </div>
