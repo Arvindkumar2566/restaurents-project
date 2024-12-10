@@ -5,7 +5,7 @@ import './Tumbnil.css';
 const Tumbnil = () => {
   return (
     <div>
-        <div className='d-flex col-sm-'>
+        <div className='tumnil_head col-sm-'>
 
         {/* for 1 */}
         <div className='one'>

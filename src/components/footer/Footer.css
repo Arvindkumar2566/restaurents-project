@@ -71,11 +71,10 @@
   }
   
     .yellow-bar {
-      background-color: rgb(255, 153, 0);
+    background-color: rgb(255, 153, 0);
       padding: 10px 20px;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      justify-content: space-between;
     }
   
   .yellow-bar p {
@@ -85,6 +84,8 @@
   
   .clock {
     background-color:rgb(255, 153, 0);
+    width: 60px;
+      border-radius: 2px;
   }
   
   .footer {
@@ -126,11 +127,6 @@
     opacity: 0.8;
   }
   
-  .clock {
-    width: 60px;
-    border-radius: 2px;
-  }
-  
   .clock-font {
     margin-left: 20px;
   }
@@ -145,6 +141,10 @@
       flex-direction: column;
       text-align: center;
     }
+    .yellow-bar_content{
+      padding-bottom: 15px;
+    }
+    
 }
 
   

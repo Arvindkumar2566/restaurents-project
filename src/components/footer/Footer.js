@@ -104,7 +104,6 @@ const Footer = () => {
               <li>Privacy</li>
             </ul>
           </div>
-
           {/* Recent Posts */}
           <div className="col-md-3">
             <h5 className="text-warning">Recent Posts</h5>
@@ -136,8 +135,10 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="yellow-bar d-flex justify-content-between align-items-center">
-        <p className="mb-0">Copyright © 2022 by Ayeman. All Rights Reserved.</p>
+      <div className="yellow-bar ">
+        <div>
+            <p className="mb-0 yellow-bar_content ">Copyright © 2022 by Ayeman. All Rights Reserved.</p>
+        </div>
         <div>
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             <img src="/assets/images/fb1.svg" alt="Facebook" className="me-2 social-media" />
@@ -148,7 +149,7 @@ const Footer = () => {
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
             <img src="/assets/images/x.svg" alt="Twitter" className="me-2 social-media" />
           </a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://yout.com" target="_blank" rel="noopener noreferrer">
             <img src="/assets/images/youtube.svg" alt="YouTube" className="me-2 social-media" />
           </a>
           <img src="/assets/images/pics.svg" alt="Pics" className="me-2 social-media" />

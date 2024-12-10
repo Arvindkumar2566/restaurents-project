@@ -66,14 +66,8 @@ function App() {
           <Route path="/blog/blog" element={<Blog />} />
           <Route path="/blog/blogdetails" element={<BlogDetails />} />
           <Route path="/pages" element={<Pages />} />
-          <Route
-            path="/shop"
-            element={<Shop cart={cart} CartHandler={CartHandler} />}
-          />
-          <Route
-            path="/cart"
-            element={<Cart cart={cart} setCart={setCart} />}
-          />
+          <Route path="/shop" element={<Shop cart={cart} CartHandler={CartHandler} />}/>
+          <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />}/>
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/about/mangos" element={<Mangos />} />
@@ -82,16 +76,12 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/starter" element={<Starter />} />
-          <Route
-            path="/card-details"
-            element={<CardDetails CartHandler={CartHandler} />}
-          />
+          <Route path="/card-details"element={<CardDetails CartHandler={CartHandler} />}/>
           <Route path="/product-description" element={<ProductDescription />} />
           <Route path="/ourchef" element={<Ourchef />} />
           <Route path="/login/user-details" element={<UserDetail />} />
           <Route path='/checkoutpage' element={<Checkoutpage cart={cart} setCart={setCart} />}/>
           <Route path='/searchfood' element={<Searchfooditems/>}/>
-          
         </Routes>
       </div>
       <Footer />

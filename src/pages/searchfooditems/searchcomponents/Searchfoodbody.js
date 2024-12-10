@@ -4,7 +4,7 @@ import './Searchfoodbody.css'
 function Searchfoodbody() {
   return (
     <div>
-         <div className="row" >
+         <div className="rowa" >
       <div className='col-md-4'> 
       <div className="card" style={{ width: '18rem' }}>
       <img
@@ -17,7 +17,7 @@ function Searchfoodbody() {
         <p className="card-text">
           This is a simple card example using Bootstrap in React.
         </p>
-        <a href="#" className="btn btn-primary">
+        <a href="# " className="btn btn-primary">
           Go somewhere
         </a>
       </div>

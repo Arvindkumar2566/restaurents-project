@@ -56,3 +56,77 @@
 .img {
     width: 100px;
 }
+
+/* Tumbnil Header Flex */
+.tumnil_head {
+    display: flex;
+}
+
+/* Styling for the social media section */
+.one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.one img {
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments for smaller screens (below 756px) */
+@media (max-width: 756px) {
+
+    /* Reduce the size of the gold class text */
+    .gold {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    /* Adjust the gold_1d subtitle text */
+    .gold_1d {
+        font-size: 36px;
+        margin-left: 10px;
+    }
+
+    /* Adjust the gold_2d paragraph text */
+    .gold_2d {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    /* Adjust button size */
+    .gold_b {
+        width: 100px;
+        font-size: 12px;
+    }
+
+    /* Adjust front image size */
+    .front_img1 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Adjust layout for social media links */
+    .one {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* Adjust spacing between elements */
+    .tumnil_head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust margin for the "see menu" button */
+    .btn.gold_b {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    /* Adjust the margins in the second section */
+    .ms-2 {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
