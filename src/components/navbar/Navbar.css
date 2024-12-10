@@ -98,6 +98,7 @@
     width: 20px;
     height: 20px;
     position: relative;
+  
 }
 
 .search {
@@ -108,7 +109,7 @@
 }
 
 .search::placeholder {
-    color: white;
+  
     /* Set placeholder text color to white */
 }
 

@@ -4,10 +4,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./Navbar.css";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import Searchfoodbody from "../../pages/searchfooditems/searchcomponents/Searchfoodbody"; // Import only if needed elsewhere
 
 function Navbar({ size }) {
   const navigate = useNavigate();
   const [userInitial, setUserInitial] = useState(null);
+  const [search, setSearch] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
 
   useEffect(() => {
     const auth = getAuth();
@@ -25,6 +28,21 @@ function Navbar({ size }) {
 
   const handleCartClick = () => {
     navigate("/cart");
+  };
+
+  const searchOnsubmit = (e) => {
+    e.preventDefault();
+    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
+      .then((response) => response.json())
+      .then((data) => {
+        setSearchResults(data.meals); // Store meals in searchResults
+        navigate("/searchfood", { state: { searchData: data.meals } }); // Pass search data to /searchfood
+      })
+      .catch((error) => console.error("Error fetching meals:", error));
+  };
+
+  const searchHandler = () => {
+    navigate("/searchfood");
   };
 
   const handleSignOut = async () => {
@@ -155,12 +173,15 @@ function Navbar({ size }) {
             </ul>
           </div>
 
-          <form className="d-flex ms-auto" role="search">
+          <form className="d-flex ms-auto" role="search" onSubmit={searchOnsubmit}>
             <input
               className="form-control search"
               type="search"
               placeholder="Search..."
               aria-label="Search"
+              onClick={searchHandler}
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
             />
             <span className="srh_img">
               <img
@@ -209,10 +230,13 @@ function Navbar({ size }) {
                 </NavLink>
               )}
             </li>
+            
           </form>
+        <Searchfoodbody search={search}/>
         </div>
       </nav>
     </>
   );
 }
- export default Navbar;
+
+export default Navbar;

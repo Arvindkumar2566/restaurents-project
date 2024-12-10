@@ -23,6 +23,7 @@ import Register from './pages/login/Register';
 import Signin from './pages/login/Signin';
 import Checkoutpage from './pages/checkoutpage/Checkoutpage';
 import './App.css';
+import Searchfooditems from './pages/searchfooditems/Searchfooditems';
 
 function App() {
   const [cart, setCart] = useState(() => {
