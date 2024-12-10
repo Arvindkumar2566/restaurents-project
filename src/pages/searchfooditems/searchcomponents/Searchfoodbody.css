@@ -9,7 +9,7 @@
   }
   
   .meal-card {
-    background-color: #fff;
+   
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -48,4 +48,30 @@
   .view-details-btn:hover {
     background-color: #d97d00;
   }
+  .food-cards{
+    display: flex
+    ;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+  }
   
+ h3{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  color: orange;
+  margin-top: 10px;
+ } 
+ .view-btn{
+  background: none;
+  color: black;
+  border: #f19205 solid 1px;
+ }
+ .view-btn:hover{
+  background: orange;
+ }
+ .card-title{
+  font-size: 18px;
+    font-weight: 700;
+ }

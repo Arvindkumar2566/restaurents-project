@@ -4,14 +4,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./Navbar.css";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
-import Searchfoodbody from "../../pages/searchfooditems/searchcomponents/Searchfoodbody"; // Import only if needed elsewhere
 
 function Navbar({ size }) {
   const navigate = useNavigate();
   const [userInitial, setUserInitial] = useState(null);
   const [search, setSearch] = useState("");
-  const [data,setData]=useState([])
-
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     const auth = getAuth();
@@ -36,14 +34,10 @@ function Navbar({ size }) {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
       .then((response) => response.json())
       .then((data) => {
-       console.log( setData(data.meals)); // Store meals in searchResults
+        setData(data.meals); // Store meals in data state
         navigate("/searchfood", { state: { searchData: data.meals } }); // Pass search data to /searchfood
       })
       .catch((error) => console.error("Error fetching meals:", error));
-  };
-
-  const searchHandler = () => {
-    navigate("/searchfood");
   };
 
   const handleSignOut = async () => {
@@ -81,47 +75,19 @@ function Navbar({ size }) {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav me-auto">
               <li className="nav-item">
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active-link" : "nav-link"
-                  }
-                  to="/home"
-                >
+                <NavLink className="nav-link" to="/home">
                   Home
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active-link" : "nav-link"
-                  }
-                  to="/menu"
-                >
+                <NavLink className="nav-link" to="/menu">
                   Menu
                 </NavLink>
               </li>
-              <li className="nav-item dropdown">
-                <NavLink
-                  className="nav-link dropdown-toggle"
-                  to="/blog"
-                  id="blogDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                >
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/blog">
                   Blog
                 </NavLink>
-                <ul className="dropdown-menu" aria-labelledby="blogDropdown">
-                  <li>
-                    <NavLink className="dropdown-item" to="/blog/blog">
-                      Blog
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink className="dropdown-item" to="/blog/blogdetails">
-                      Blog Details
-                    </NavLink>
-                  </li>
-                </ul>
               </li>
               <li className="nav-item dropdown">
                 <NavLink
@@ -152,25 +118,16 @@ function Navbar({ size }) {
                 </ul>
               </li>
               <li className="nav-item">
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active-link" : "nav-link"
-                  }
-                  to="/shop"
-                >
+                <NavLink className="nav-link" to="/shop">
                   Shop
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active-link" : "nav-link"
-                  }
-                  to="/contact"
-                >
+                <NavLink className="nav-link" to="/contact">
                   Contact
                 </NavLink>
               </li>
+              {/* Add more navigation items here */}
             </ul>
           </div>
 
@@ -180,7 +137,6 @@ function Navbar({ size }) {
               type="search"
               placeholder="Search..."
               aria-label="Search"
-              onClick={searchHandler}
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
@@ -190,7 +146,6 @@ function Navbar({ size }) {
                 alt="Search Icon"
                 className="search_icon"
                 style={{ width: "20px", height: "20px" }}
-               
               />
             </span>
             <img
@@ -221,20 +176,14 @@ function Navbar({ size }) {
                   </button>
                 </>
               ) : (
-                <NavLink
-                  className="nav-link"
-                  to="/register"
-                  style={{ textDecoration: "none" }}
-                >
+                <NavLink className="nav-link" to="/register">
                   <button type="button" className="btn btn-warning">
                     Signup
                   </button>
                 </NavLink>
               )}
             </li>
-            
           </form>
-        {data.length>=1 ?<Searchfoodbody data={data}/>:null}
         </div>
       </nav>
     </>
