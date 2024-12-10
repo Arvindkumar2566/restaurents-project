@@ -61,35 +61,26 @@
   .still-font{
     font-size: 12px;
   }
-  .social-media {
-    background: white;
-    padding: 2px;
-    border-radius: 2px;
-    height: 30px;
-    width: 25px;
-    position: relative;
-    right: 150px;
-  }
-  
+    .social-media {
+      margin: 0 5px;
+      height: 30px;
+      width: 30px;
+    }
   .input-group {
     margin-right: 100px;
   }
   
-  .yellow-bar {
-    background-color:rgb(255, 153, 0);
-    height: 55px;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-    bottom: 0;
-    width: 100%;
-  }
+    .yellow-bar {
+      background-color: rgb(255, 153, 0);
+      padding: 10px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   
   .yellow-bar p {
     position: relative;
-    left: 221px;
+    margin: 0;
   }
   
   .clock {
@@ -143,4 +134,17 @@
   .clock-font {
     margin-left: 20px;
   }
+  @media (max-width: 768px) {
+  .footer_top{
+    flex-wrap: wrap;
+  }
+  .email-input{
+    width: 100%;
+  }
+    .yellow-bar {
+      flex-direction: column;
+      text-align: center;
+    }
+}
+
   
