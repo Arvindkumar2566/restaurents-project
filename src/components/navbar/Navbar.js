@@ -10,7 +10,8 @@ function Navbar({ size }) {
   const navigate = useNavigate();
   const [userInitial, setUserInitial] = useState(null);
   const [search, setSearch] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
+  const [data,setData]=useState([])
+
 
   useEffect(() => {
     const auth = getAuth();
@@ -35,7 +36,7 @@ function Navbar({ size }) {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
       .then((response) => response.json())
       .then((data) => {
-        setSearchResults(data.meals); // Store meals in searchResults
+       console.log( setData(data.meals)); // Store meals in searchResults
         navigate("/searchfood", { state: { searchData: data.meals } }); // Pass search data to /searchfood
       })
       .catch((error) => console.error("Error fetching meals:", error));
@@ -189,6 +190,7 @@ function Navbar({ size }) {
                 alt="Search Icon"
                 className="search_icon"
                 style={{ width: "20px", height: "20px" }}
+               
               />
             </span>
             <img
@@ -232,7 +234,7 @@ function Navbar({ size }) {
             </li>
             
           </form>
-        <Searchfoodbody search={search}/>
+        {data.length>=1 ?<Searchfoodbody data={data}/>:null}
         </div>
       </nav>
     </>
