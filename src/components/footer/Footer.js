@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="footer mt-5 text-white">
       {/* Email and Subscribe Section */}
-      <div className="container text-center py-4 d-flex justify-content-between">
+      <div className="footer_top container text-center py-4 d-flex justify-content-between">
        <div>
        <h2>
           <span className="text-warning ">Still</span> Need Our Support?

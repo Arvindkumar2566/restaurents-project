@@ -1,17 +1,15 @@
-import React from 'react';
-import './Checkoutpage.css';
-import Checkoutpagebody from './checkoutcomponents/Checkoutpagebody';
-import Checkoutpageheader from './checkoutcomponents/Checkoutpageheader';
+import React from "react";
+import "./Checkoutpage.css";
+import Checkoutpagebody from "./checkoutcomponents/Checkoutpagebody";
+import Checkoutpageheader from "./checkoutcomponents/Checkoutpageheader";
 
-const Checkoutpage = () => {
-   
-    
+const Checkoutpage = ({ cart, setCart }) => {
   return (
-    <div>
-    <Checkoutpageheader/>
-   <Checkoutpagebody/>
+    <div className="bg-white text-dark">
+      <Checkoutpageheader />
+      <Checkoutpagebody cart={cart} setCart={setCart} />
     </div>
-  )
-}
+  );
+};
 
-export default Checkoutpage
+export default Checkoutpage;

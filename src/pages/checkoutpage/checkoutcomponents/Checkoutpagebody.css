@@ -1,0 +1,319 @@
+/* Main Checkout Page Layout */
+.checkout-page-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+/* Left Section: Form */
+.checkout-form-left,
+.checkout-summary-right {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.checkout-form-left {
+    width: 60%;
+}
+
+.checkout-form-left h2 {
+    margin-bottom: 20px;
+}
+
+/* Form Container */
+.address-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Inputs and Groups */
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.input-group input,
+.input-group select {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.input-group select {
+    cursor: pointer;
+}
+
+/* Checkbox */
+.same-address-checkbox {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.same-address-checkbox input {
+    margin-right: 10px;
+}
+
+/* Form Buttons */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 48%;
+    margin-top: 10px;
+}
+
+.back-to-cart-btn {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.proceed-to-shipping-btn {
+    background-color: orange;
+    color: white;
+}
+
+.proceed-to-shipping-btn:hover {
+    background-color: #d68a10;
+}
+
+/* Right Section: Summary */
+.checkout-summary-right {
+    width: 35%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 52px;
+}
+
+.cart-summary-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.cart-item-summary {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.cart-item-summary img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.cart-item-summary h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Totals */
+.cart-totals-container {
+    margin-top: 20px;
+}
+
+.cart-totals-container p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.cart-totals-container h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Place Order Button */
+.place-order-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.place-order-btn:hover {
+    background-color: #218838;
+}
+
+/* Modal Styles */
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    width: 400px;
+    text-align: center;
+}
+
+.filled-details-container p {
+    margin: 10px 0;
+}
+
+.close-modal-btn {
+    background-color: #22a70d;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.close-modal-btn:hover {
+    background-color: #40f209;
+}
+.success-animation {
+    margin: 15px auto;
+}
+
+.checkmark {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #4bb71b;
+    stroke-miterlimit: 10;
+    box-shadow: inset 0px 0px 0px #4bb71b;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    position: relative;
+    top: 5px;
+    right: 5px;
+    margin: 0 auto;
+}
+
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #4bb71b;
+    fill: #fff;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes scale {
+
+    0%,
+    100% {
+        transform: none;
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #4bb71b;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .checkout-page-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .checkout-form-left,
+    .checkout-summary-right {
+        width: 100%;
+    }
+
+    .input-group input,
+    .input-group select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form-buttons button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .cart-summary-container {
+        padding: 15px;
+    }
+
+    .place-order-btn {
+        font-size: 16px;
+    }
+
+    .modal-content-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .input-group input,
+    .input-group select {
+        width: 100%;
+    }
+
+    .form-buttons button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .cart-summary-container {
+        padding: 10px;
+    }
+
+    .place-order-btn {
+        font-size: 14px;
+    }
+
+    .modal-content-container {
+        width: 90%;
+        padding: 15px;
+    }
+}
