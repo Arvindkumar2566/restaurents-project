@@ -33,7 +33,11 @@ function Navbar({ size }) {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
       .then((response) => response.json())
       .then((data) => {
-        navigate("/searchfood", { state: { searchData: data.meals } }); // Pass search data to /searchfood
+        if (data.meals) {
+          navigate("/searchfood", { state: { searchData: data.meals } }); // Pass search data to /searchfood
+        } else {
+          console.error("No meals found");
+        }
       })
       .catch((error) => console.error("Error fetching meals:", error));
   };
@@ -82,10 +86,28 @@ function Navbar({ size }) {
                   Menu
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/blog">
+              <li className="nav-item dropdown">
+                <NavLink
+                  className="nav-link dropdown-toggle"
+                  to="/blog"
+                  id="blogDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
                   Blog
                 </NavLink>
+                <ul className="dropdown-menu" aria-labelledby="blogDropdown">
+                  <li>
+                    <NavLink className="dropdown-item" to="/blog/blog">
+                      Blog
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink className="dropdown-item" to="/blog/blogdetails">
+                      Blog Details
+                    </NavLink>
+                  </li>
+                </ul>
               </li>
               <li className="nav-item dropdown">
                 <NavLink
@@ -110,7 +132,7 @@ function Navbar({ size }) {
                   </li>
                   <li>
                     <NavLink className="dropdown-item" to="/about/chefs">
-                      Chefs 
+                      Chefs
                     </NavLink>
                   </li>
                 </ul>

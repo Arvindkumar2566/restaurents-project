@@ -108,8 +108,7 @@
 
     /* Adjust layout for social media links */
     .one {
-        flex-direction: row;
-        justify-content: center;
+        display: none;
     }
 
     /* Adjust spacing between elements */
@@ -127,6 +126,6 @@
     /* Adjust the margins in the second section */
     .ms-2 {
         margin-left: 0;
-        margin-top: 20px;
+       
     }
 }
