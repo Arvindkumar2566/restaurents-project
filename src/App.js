@@ -10,9 +10,9 @@ import BlogDetails from './pages/blogDetails/Blogdetails';
 import Shop from './pages/shop/Shop';
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
-import Mangos from './pages/about/Mangos';
-import Apple from './pages/about/Apple';
-import Bananas from './pages/about/Bananas';
+import Ourstory from './pages/about/Ourstory';
+import Outlets from './pages/about/Outlets';
+import Chefs from './pages/about/Chefs';
 import Starter from './pages/menu/Menucomponents/Starter';
 import CardDetails from './pages/shop/shopComponents/CardDetails';
 import ProductDescription from './pages/shop/shopComponents/ProductDescription';
@@ -24,6 +24,7 @@ import Signin from './pages/login/Signin';
 import Checkoutpage from './pages/checkoutpage/Checkoutpage';
 import './App.css';
 import Searchfooditems from './pages/searchfooditems/Searchfooditems';
+
 
 function App() {
   const [cart, setCart] = useState(() => {
@@ -70,9 +71,9 @@ function App() {
           <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />}/>
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
-          <Route path="/about/mangos" element={<Mangos />} />
-          <Route path="/about/apple" element={<Apple />} />
-          <Route path="/about/bananas" element={<Bananas />} />
+          <Route path="/about/ourstory" element={<Ourstory/>} />
+          <Route path="/about/outlets" element={<Outlets/>} />
+          <Route path="/about/chefs" element={<Chefs />} />
           <Route path="/register" element={<Register />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/starter" element={<Starter />} />

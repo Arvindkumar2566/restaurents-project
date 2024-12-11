@@ -1,77 +1,72 @@
 .search-food-container {
-    padding: 20px;
-  }
-  
-  .rowa{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .meal-card {
-   
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 200px;
-  }
-  
-  .meal-img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-  
-  .meal-info {
-    padding: 10px;
-  }
-  
-  .meal-title {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .meal-description {
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .view-details-btn {
-    background-color: #f8a200;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .view-details-btn:hover {
-    background-color: #d97d00;
-  }
-  .food-cards{
-    display: flex
-    ;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        
-  }
-  
- h3{
-  text-align: center;
-  font-size: 35px;
-  font-weight: 700;
-  color: orange;
-  margin-top: 10px;
- } 
- .view-btn{
+  padding: 20px;
+}
+
+.rowa {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.meal-card {
+
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.meal-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.meal-info {
+  padding: 10px;
+}
+
+.meal-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.meal-description {
+  font-size: 14px;
+  color: #555;
+}
+
+.view-details-btn {
+  background-color: #f8a200;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-details-btn:hover {
+  background-color: #d97d00;
+}
+
+.food-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.view-btn {
   background: none;
   color: black;
   border: #f19205 solid 1px;
- }
- .view-btn:hover{
+}
+
+.view-btn:hover {
   background: orange;
- }
- .card-title{
+  color: white;
+}
+
+.card-title {
   font-size: 18px;
-    font-weight: 700;
- }
+  font-weight: 700;
+}

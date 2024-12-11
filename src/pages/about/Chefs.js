@@ -1,13 +1,13 @@
 import React from 'react';
-import './Bananas.css';
+import './Chefs.css';
 
-function Bananas() {
+function Chefs() {
   return (
     <div className="bananas">
-      <h1>About Bananas</h1>
+      <h1>About chefs</h1>
       <p>Sweet and ripe bananas.</p>
     </div>
   );
 }
 
-export default Bananas;
+export default Chefs;

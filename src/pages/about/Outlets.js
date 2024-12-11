@@ -1,7 +1,7 @@
 import React from 'react';
-import './Apple.css';
+import './Outlets.css';
 
-function Apple() {
+function Outlets() {
   return (
     <div className="apple">
       <h1>About Apples</h1>
@@ -10,4 +10,4 @@ function Apple() {
   );
 }
 
-export default Apple;
+export default Outlets;

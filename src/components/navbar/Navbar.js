@@ -9,7 +9,6 @@ function Navbar({ size }) {
   const navigate = useNavigate();
   const [userInitial, setUserInitial] = useState(null);
   const [search, setSearch] = useState("");
-  const [data, setData] = useState([]);
 
   useEffect(() => {
     const auth = getAuth();
@@ -34,7 +33,6 @@ function Navbar({ size }) {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
       .then((response) => response.json())
       .then((data) => {
-        setData(data.meals); // Store meals in data state
         navigate("/searchfood", { state: { searchData: data.meals } }); // Pass search data to /searchfood
       })
       .catch((error) => console.error("Error fetching meals:", error));
@@ -101,18 +99,18 @@ function Navbar({ size }) {
                 </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="aboutDropdown">
                   <li>
-                    <NavLink className="dropdown-item" to="/about/mangos">
-                      Mangos
+                    <NavLink className="dropdown-item" to="/about/ourstory">
+                      Ourstory
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item" to="/about/apple">
-                      Apple
+                    <NavLink className="dropdown-item" to="/about/outlets">
+                      Outlets
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item" to="/about/bananas">
-                      Bananas
+                    <NavLink className="dropdown-item" to="/about/chefs">
+                      Chefs 
                     </NavLink>
                   </li>
                 </ul>
@@ -127,7 +125,6 @@ function Navbar({ size }) {
                   Contact
                 </NavLink>
               </li>
-              {/* Add more navigation items here */}
             </ul>
           </div>
 

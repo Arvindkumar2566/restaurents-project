@@ -21,4 +21,4 @@ function Searchfoodbody({ data }) {
   );
 }
 
-export default Searchfoodbody;
+export default Searchfoodbody;
