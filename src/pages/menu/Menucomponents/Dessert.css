@@ -1,200 +1,120 @@
-
+/* Base styles for the dessert menu */
 .starter-menu-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    background-color: white;
-  }
-  .desserts-description{
-    color: #6d6b6b;
-    font-size: 16px;
-    font-family: Helvetica;
-   
-  }
-  
-  .image-container {
-   display: flex;
-   gap: 20px;
-  }
-  
-  .dessert-image {
-    width: 400px;
-    height: 500px;
-   
-  }
-  
-  .dessert-element {
-    flex: 1;
-    margin-left: 70px;
-  }
-  
-  .dessert-text {
-    color: #333;
-    margin-bottom: 20px;
-    font-family: Helvetica;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1;
-   
-  }
-  .coffee{
-    margin-left: 25px;
-  }
-  
-  .dessert-item{
-    display: flex;
-    justify-content: space-between;
-   
-    border-bottom: 0.05px solid #f5f0f0;
-  
-  }
-  
-  .fig-text {
-    font-size: 18px;
-    color: #0a0a0a;
-    margin: 0;
-    font-family: 
-    Helvetica;
-    line-height: 1;
-    font-weight: 700;
-  }
-  
-  /* .alder-text {
-    font-size: 24px;
-    color: #666;
-    margin: 5px 0;
-  } */
-  .creamy-text{
-    font-size: 24px;
-    font-family: 
-    Helvetica;
-  
-    font-weight: 700;
-    line-height: 1;
-    color: #333;
-  }
-.coffee1{
-margin-left: -9px;
-width: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 50px;
 }
-  .pastry-text{
-    font-size: 24px;
-    font-family: 
-    Helvetica;
-    font-weight: 700;
-    line-height: 1;
-    color: #333;
+
+/* Image container stays on the left */
+.image-containe {
+  flex: 1;
+  max-width: 100%;
+}
+
+.dessert-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Menu container */
+.dessert-element {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+/* Title and Coffee Image */
+.dessert-text1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.coffee1 {
+  width: 40px;
+  height: 40px;
+}
+
+/* Menu list styles */
+.dessert-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dessert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.dessert-details {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.dessert-text {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.items-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin: 5px 0;
+}
+
+.dessert-price {
+  font-weight: bold;
+  font-size: 16px;
+  color: orange;
+  white-space: nowrap;
+}
+
+/* Responsive layout for small devices */
+@media (max-width: 768px) {
+  .starter-menu-container {
+    flex-direction: column;
   }
-  .pain-text{
-    font-size: 24px;
-    font-family: 
-    Helvetica;
-    font-weight: 700;
-    line-height: 1;
-    color: #333;
-  }
-  
- .dessert-price {
-    font-size: 18px;
-    color: orange;
-    font-weight: bold;
-  }
-  .dessert-item:hover {
-    background-color: #f9f9f9;
-    cursor: pointer;
-  }
-  .dessert-menu {
-    padding: 2rem;
-    background-color: white;
-  }
-  
-  /* Style for the product names */
-  .dessert-text {
-    font-size: 48px; /* Adjust the font size */
-    font-weight: bold; /* Make the font bold */
-    color: #333; /* Default color */
-    margin-bottom: 0.5rem; /* Space between name and description */
-    text-transform: capitalize; /* Capitalize each word */
-    transition: color 0.3s ease; /* Smooth hover effect */
-  }
-  
-  /* Hover effect for product names */
-  .dessert-text:hover {
-    cursor: pointer; /* Pointer cursor */
-  }
-  
-  /* Menu item details */
-  .dessert-details {
-    margin-bottom: 1rem;
-  }
-  
-  /* Price styling */
-  .dessert-price {
-    font-size: 1rem;
-    color: orange;
-    font-weight: 500;
-  }
-  
-  /* General layout styles */
-  .dessert-item {
-    list-style: none;
-    border-bottom: 1px solid #ddd;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Additional styling for description */
-  .items-description {
-    font-size: 0.9rem;
-    color: #666;
-  }
-  
-  /* Image container */
-  .image-containe {
-  
-    margin-bottom: 2rem;
-  }
-  .dessert-text1{
-    color: black;
-    font-size: 48px;
-    font-weight: 700;
-    margin-left: -5px;
-  }
-  
-  .dessert-image {
+
+  .image-containe, .dessert-element {
     width: 100%;
-    max-width: 400px;
-    margin-left: -5px;
   }
-  
- 
-  
-  /* Menu text */
-  .dessert-text {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 1rem;
+
+  .dessert-item {
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 10px 0;
   }
-  
-  .dessert-list {
-    padding: 0;
+
+  .dessert-details {
+    margin-bottom: 10px;
   }
-  
-  .dessert-item:hover {
-    background-color: #f9f9f9;
-    cursor: pointer;
+
+  .dessert-price {
+    font-size: 14px;
+    margin-top: 5px;
   }
-  
-  .dessert-item .dessert-details {
-    flex: 1;
+
+  .dessert-image {
+    margin-bottom: 20px;
   }
-  
-  .dessert-item .dessert-price {
-    margin-left: -5px;
-    color: orange;
-    font-weight: 600;
+
+  .dessert-text1 {
+    text-align: center;
   }
-  
+}

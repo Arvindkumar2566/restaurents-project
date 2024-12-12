@@ -7,7 +7,9 @@
     padding: 20px;
     font-family: Arial, sans-serif;
 }
-
+.main-element{
+    padding: 50px;
+}
 /* Left section */
 .main-course-left {
     flex: 2;
@@ -81,3 +83,55 @@
    
     object-fit: cover;
 }
+/* Base styles for the container */
+.main-course-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  /* Ensure wrapping for small devices */
+  @media (max-width: 768px) {
+    .main-course-container {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  
+    .main-course-left, .main-course-right {
+      width: 100%;
+    }
+  
+    .main-course-right img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  }
+  
+  /* Style for menu items */
+  .menu-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .item-details {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  

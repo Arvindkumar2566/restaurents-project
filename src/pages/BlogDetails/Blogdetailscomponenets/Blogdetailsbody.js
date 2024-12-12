@@ -4,16 +4,16 @@ import './Blogdetailsbody.css'
 const Blogdetailsbody = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Handle search input change
+
   const handleInputChange = (event) => {
     setSearchQuery(event.target.value);
   };
 
-  // Handle search action
+
   const handleSearch = () => {
     if (searchQuery.trim() !== '') {
       console.log('Searching for:', searchQuery);
-      // You can add your search functionality here
+  
     } else {
       console.log('Please enter a search query.');
     }

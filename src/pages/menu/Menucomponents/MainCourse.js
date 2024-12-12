@@ -37,13 +37,14 @@ const MainCourse = () => {
       name: 'Spicy Vegan Potato Curry',
       description: 'Spreadable cream cheese, crumbled blue cheese\n560 CAL',
       price: '35$',
-      image: '/assets/images/vegan-curry.svg', // Example image for variety
+      image: '/assets/images/vegan-curry.svg', 
       category: 'vegan',
     },
   ];
 
   return (
-    <div className="main-course-container mx-5">
+    <div className='main-element'>
+      <div className="main-course-container ">
       <div className="main-course-left">
         <h1>
           <span className="icon">🍳</span> Main Course
@@ -79,6 +80,7 @@ const MainCourse = () => {
           className="main-course-image"
         />
       </div>
+    </div>
     </div>
   );
 };
