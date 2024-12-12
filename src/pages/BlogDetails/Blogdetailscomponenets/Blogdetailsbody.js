@@ -23,7 +23,7 @@ const Blogdetailsbody = () => {
     
       <div className='blogdetails-section d-flex'>
         <div className="masala1-section" >
-          <img src="/assets/images/chicken-piece.svg" alt="masala-blog" className="masala-blog" />
+          <img src="/assets/images/chicken-piece.svg" alt="masala-blog" className="masala-blog1" />
           <div className="calender-dates d-flex">
             <img src="/assets/images/blog-dates.svg" alt="blog-dates" className="blog-dates mb-2" />
             <p className="mt-2 ml-2">Feb 14,2022 /</p>
@@ -149,7 +149,7 @@ const Blogdetailsbody = () => {
                 <button className='post-comment'>Post aComment</button>
             </div>
           </div>
-          <div className='mt-5 '>
+          <div className='mt-5 search-bar-orange '>
       <div className="search-bar-elements mb-5" >
         <input
           type="text"
@@ -176,28 +176,28 @@ const Blogdetailsbody = () => {
       <div className='recent-post-section mb-5'>
         <p className='recent-post-text '>Recent Post</p>
         <div className='recemt-post-images'>
-           <div className='gap-3 d-flex'>
+           <div className='gap-3 d-flex recent-post-elements'>
               <img src='/assets/images/recent-post1.svg' alt='recent-post' className='recent-post'/>
              <div className="paragraph">
              <p>june 22,2020</p>
              <p>Lorem ipsum dolor sit cing elit,sed do</p>
              </div>
            </div>
-           <div  className='gap-3 d-flex'>
+           <div  className='gap-3 d-flex recent-post-elements'>
               <img src='/assets/images/recent-post2.svg' alt='recent-post' className='recent-post'/>
               <div className="paragraph">
              <p>june 22,2020</p>
              <p>Lorem ipsum dolor sit cing elit,sed do</p>
              </div>
            </div>
-           <div   className='gap-3 d-flex'>
+           <div   className='gap-3 d-flex recent-post-elements'>
               <img src='/assets/images/recent-post3.svg' alt='recent-post' className='recent-post'/>
               <div className="paragraph">
              <p>june 22,2020</p>
              <p>Lorem ipsum dolor sit cing elit,sed do</p>
              </div>
            </div>
-           <div  className='gap-3 d-flex'>
+           <div  className='gap-3 d-flex recent-post-elements'>
               <img src='/assets/images/recent-post4.svg' alt='recent-post' className='recent-post'/>
               <div className="paragraph">
              <p>june 22,2020</p>
@@ -216,28 +216,28 @@ const Blogdetailsbody = () => {
                  <p className='food-price'>26</p>
                </div>
              </div>
-             <div className='gap-3 d-flex mb-4'>
+             <div className='gap-2 d-flex mb-4'>
                <img src='/assets/images/vegetables.svg' alt='recent-post' className='fast-food'/>
                <div className="food-container d-flex justify-content-between w-100">
                  <p className='food-name'>Vegetables</p>
                  <p className='food-price'>26</p>
                </div>
              </div>
-             <div className='gap-3 d-flex mb-4'>
+             <div className='gap-2 d-flex mb-4'>
                <img src='/assets/images/fresh-fruits.svg' alt='recent-post' className='fast-food'/>
                <div className="food-container d-flex justify-content-between w-100">
                  <p className='food-name'>Fresh Fruits</p>
                  <p className='food-price'>26</p>
                </div>
              </div>
-             <div className='gap-3 d-flex mb-4'>
+             <div className='gap-2 d-flex mb-4'>
                <img src='/assets/images/burger-food.svg' alt='recent-post' className='fast-food'/>
                <div className="food-container d-flex justify-content-between w-100">
                  <p className='food-name'>Burger</p>
                  <p className='food-price'>26</p>
                </div>
              </div>
-             <div className='gap-3 d-flex mb-4'>
+             <div className='gap-2 d-flex mb-4'>
                <img src='/assets/images/pizz-food.svg' alt='recent-post' className='fast-food'/>
                <div className="food-container d-flex justify-content-between w-100">
                  <p className='food-name'>Pizza</p>
@@ -251,22 +251,22 @@ const Blogdetailsbody = () => {
             <p className='popular-tag-text'>Popular Tags</p>
           </div>
          <div>
-         <div className='d-flex'>
+         <div className='d-flex Bbq '>
             <p className='popular-tag-name'>Sandwich</p>
             <p  className='popular-tag-name'>Tikka</p>
             <p className='popular-tag-name'>Bbq</p>
           </div>
-          <div className='d-flex'>
+          <div className='d-flex Bbq'>
           
             <p  className='popular-tag-name'>Restaurant</p>
             <p  className='popular-tag-name'>Chicken Sharma</p>
           </div>
-          <div className='d-flex'>
+          <div className='d-flex Bbq'>
             <p  className='popular-tag-name'>Health</p>
             <p  className='popular-tag-name'>Fastfood</p>
             <p  className='popular-tag-name'>Food</p>
           </div>
-          <div className='d-flex'>
+          <div className='d-flex  Bbq'>
             <p  className='popular-tag-name'>Chicken</p>
             <p  className='popular-tag-name'>Burger</p>
             <p  className='popular-tag-name'>Pizza</p>
@@ -278,7 +278,7 @@ const Blogdetailsbody = () => {
           <div className='photo-gallery-first-row d-flex g-3 '>
                <img src='/assets/images/group1.svg' alt='food-image' className='group1 mb-2'/>
                <img src='/assets/images/group11.svg' alt='food-image' className='group1 ml-2 mb-2'/>
-               <img src='/assets/images/group1.svg' alt='food-image' className='group1 ml-2'/>
+               <img src='/assets/images/group1.svg' alt='food-image' className='group1 ml-2 mb-2'/>
           </div>
           <div className='photo-gallery-second-row d-flex g-3'>
           <img src='/assets/images/group21.svg' alt='food-image' className='group1 mb-2'/>
