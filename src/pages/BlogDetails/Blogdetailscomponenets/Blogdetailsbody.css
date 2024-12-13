@@ -118,7 +118,7 @@
     margin: 0px;
 }
 @media screen and (max-width:1024px) {
-    .blogdetails-section{
+    .Blogcomponent-section{
         flex-wrap: wrap;
         text-align: justify;
         

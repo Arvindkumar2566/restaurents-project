@@ -4,16 +4,16 @@ import './Blogcomponentbody.css';
 export default function Blogcomponentbody() {
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Handle search input change
+ 
   const handleInputChange = (event) => {
     setSearchQuery(event.target.value);
   };
 
-  // Handle search action
+
   const handleSearch = () => {
     if (searchQuery.trim() !== '') {
       console.log('Searching for:', searchQuery);
-      // You can add your search functionality here
+     
     } else {
       console.log('Please enter a search query.');
     }
@@ -126,7 +126,7 @@ export default function Blogcomponentbody() {
          
        </div>
     </div>
-      <div className='mt-5 '>
+      <div className='mt-5 search-bar-orange'>
       <div className="search-bar-elements mb-5" >
         <input
           type="text"
@@ -151,7 +151,7 @@ export default function Blogcomponentbody() {
          <img src='/assets/images/x-icon.svg' alt='fb' className='fb-icon ml-2'/>
       </div> 
       <div className='recent-post-section mb-5'>
-        <p className='recent-post-text '>Recent Post</p>
+        <p className='recent-post-text'>Recent Post</p>
         <div className='recemt-post-images'>
            <div className='gap-3 d-flex'>
               <img src='/assets/images/recent-post1.svg' alt='recent-post' className='recent-post'/>
