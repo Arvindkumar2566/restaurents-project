@@ -1,185 +1,127 @@
-
+/* Base styles for the starter menu */
 .starter-menu {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    background-color: white;
-  }
-  .items-description{
-    color: #6d6b6b;
-    font-size: 16px;
-    font-family: Helvetica;
-   
-  }
-  
-  .image-container {
-   display: flex;
-   gap: 20px;
-  }
-  
-  .food-image {
-    width: 400px;
-    height: 500px;
-   
-  }
-  
-  .menu-element {
-    flex: 1;
-    margin-left: 70px;
-
-  }
-
-  .coffee{
-    margin-left: 25px;
-  }
-  .starter-text {
-    color: #333;
-    margin-bottom: 20px;
-    font-family: Helvetica;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1;
-    margin-left: 25px;
-  }
-  
-  .menu-item {
-    display: flex;
-    justify-content: space-between;
-   
-    border-bottom: 0.05px solid #f5f0f0;
-  
-  }
-  
-  .alder-text {
-    font-size: 24px;
-    color: #0a0a0a;
-    margin: 0;
-    font-family: 
-    Helvetica;
-    line-height: 1;
-    font-weight: 700;
-  }
-  
-  .alder-text {
-    font-size: 24px;
-    color: #666;
-    margin: 5px 0;
-  }
-  .berrieer-text{
-    font-size: 24px;
-    font-family: 
-    Helvetica;
-    color: orange;
-    font-weight: 700;
-    line-height: 1;
-    color: #333;
-  }
-
-  .tormentoso-text{
-    font-size: 24px;
-    font-family: 
-    Helvetica;
-    font-weight: 700;
-    line-height: 1;
-    color: #333;
-  }
-  .Spicy-vegan-text{
-    font-size: 24px;
-    font-family: 
-    Helvetica;
-    font-weight: 700;
-    line-height: 1;
-    color: #333;
-  }
-  
-  .menu-price {
-    font-size: 18px;
-    color: orange;
-    font-weight: bold;
-  }
-  .menu-item:hover {
-    background-color: #f9f9f9;
-
-    cursor: pointer;
-  }
-  
-  Starter.css
-
-/* Style for the overall starter menu */
-.starter-menu {
-  padding: 2rem;
-  background-color:white;
-}
-
-/* Style for the product names */
-.product-name {
-  font-size: 1.2rem; /* Adjust the font size */
-  font-weight: bold; /* Make the font bold */
-  color: #333; /* Default color */
-  margin-bottom: 0.5rem; /* Space between name and description */
-  text-transform: capitalize; /* Capitalize each word */
-  transition: color 0.3s ease; /* Smooth hover effect */
-}
-
-/* Hover effect for product names */
-.product-name:hover {
- 
-  cursor: pointer; /* Pointer cursor */
-}
-
-/* Menu item details */
-.menu-details {
-  margin-bottom: 1rem;
-}
-
-/* Price styling */
-.menu-price {
-  font-size: 1rem;
-  color:orange;
-  font-weight: 500;
-}
-
-/* General layout styles */
-.menu-item {
-  list-style: none;
-
-  border-bottom: 1px solid #ddd;
-  border-radius: 8px;
-
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-
+  gap: 20px;
+  padding: 50px;
 }
 
-/* Menu item hover effect */
-
-
-/* Additional styling for description */
-.items-description {
-  font-size: 0.9rem;
-  color: #666;
-  
-}
-
-/* Image container */
+/* Image container stays on the left */
 .image-container {
-  text-align: center;
-  margin-bottom: 2rem;
+  flex: 1;
+  max-width: 100%;
 }
 
 .food-image {
-  width: 100%;
-  max-width: 400px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Menu container */
+.menu-element {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+/* Title and Coffee Image */
+.starter-text {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .coffee {
-  width: 50px;
-  margin-bottom: 1rem;
+  width: 40px;
+  height: 40px;
 }
-.menu-price{
-  margin-left: -5px;
-    color: orange;
-    font-weight: 600;
+
+/* Menu list styles */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-  
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.menu-details {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.items-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin: 5px 0;
+}
+
+.menu-price {
+  font-weight: bold;
+  font-size: 16px;
+  color: orange;
+  white-space: nowrap;
+}
+
+/* Responsive layout for small devices */
+@media screen and (max-width: 768px) {
+  .starter-menu {
+    flex-direction: column;
+  }
+
+  .image-container, .menu-element {
+    width: 100%;
+  }
+
+  .menu-item {
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  .menu-details {
+    margin-bottom: 10px;
+  }
+
+  .menu-price {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .food-image {
+    margin-bottom: 20px;
+  }
+
+  .starter-text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px)
+{
+  .starter-text{
+    font-size: 20px;
+    text-align: center;
+  }
+}
