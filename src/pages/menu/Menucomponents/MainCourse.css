@@ -97,7 +97,7 @@
   @media (max-width: 768px) {
     .main-course-container {
       flex-wrap: wrap;
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
   
     .main-course-left, .main-course-right {
