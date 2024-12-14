@@ -61,7 +61,7 @@ function Navbar({ size }) {
         </h2>
       </center>
       <nav className="navbar navbar-expand-lg navbar-dark">
-        <div className="container-fluid">
+        <div className="container-fluid nav_top">
           <button
             className="navbar-toggler"
             type="button"
@@ -188,7 +188,7 @@ function Navbar({ size }) {
                   </span>
                   <button
                     type="button"
-                    className="btn btn-warning ms-2"
+                    className="btn btn-warning ms-2 nav_btn"
                     onClick={handleSignOut}
                   >
                     SignOut
@@ -196,7 +196,7 @@ function Navbar({ size }) {
                 </>
               ) : (
                 <NavLink className="nav-link" to="/register">
-                  <button type="button" className="btn btn-warning">
+                  <button type="button" className="btn btn-warning ms-2 nav_btn">
                     Signup
                   </button>
                 </NavLink>

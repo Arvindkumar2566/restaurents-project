@@ -148,3 +148,8 @@ text-align: right;
   color: red;
   transition: color 0.3s ease;
 }
+@media (max-width:427px){
+  .activeprocess-hero-section{
+    display: none;
+  }
+}

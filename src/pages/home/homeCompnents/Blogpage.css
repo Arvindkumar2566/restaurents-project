@@ -87,4 +87,13 @@ border-radius: 5px;
 .like,.message,.send{
     padding-left: 10px;
 }
+@media (max-width:525px){
+    .pb_card{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .statistics-section{
+        display: none;
+    }
+}
 

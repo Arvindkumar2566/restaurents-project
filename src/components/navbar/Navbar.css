@@ -1,7 +1,7 @@
 /* Navbar Styling */
 .navbar {
     background-color: black;
-    padding: 10px 20px;
+    padding:20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,7 +46,11 @@
     border-radius: 50%;
     background-color: orange;
     visibility: hidden;
+   
     /* Initially hide the dot */
+}
+.nav-link:hover{
+    color: rgb(219, 124, 7) !important;
 }
 
 /* Show the dot on hover */
@@ -137,3 +141,16 @@
    
     border-radius: 50%;
 }
+
+@media (max-width: 769px){
+    div.container-fluid.nav_top{
+        flex-wrap: nowrap ;
+    }
+    .navbar{
+        padding: 0px;
+    }
+    .nav_btn{
+        margin-left: 20px !important;
+    }
+}
+    

@@ -1,3 +1,60 @@
 html{
   margin: 10px 30px;
 }
+@media (max-width:426px) {
+  html {
+      margin: 0px !important;
+    }
+}
+.btn-warning{
+  color:#ffffff;
+  background-color:#FF9F0D;
+}
+.btn-warning {
+  position: relative;
+  background-color: #ffc107;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+  overflow: hidden;
+}
+
+/* Hover effect with creative transition and 3D tilt */
+.btn-warning:hover {
+  background-color: orange;
+  /* Slightly darker orange */
+  color: rgb(0, 5, 8);
+  transform: scale(1.1) rotateY(10deg) rotateX(10deg);
+  /* Slight 3D tilt + scale */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  /* Larger shadow for the lift effect */
+  transition: all 0.3s ease-in-out;
+  animation: pulseEffect 0.8s ease infinite;
+  /* Adding a subtle pulse animation */
+}
+
+/* Pulse animation to create a glowing effect */
+@keyframes pulseEffect {
+  0% {
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 165, 0, 0.8);
+  }
+
+  50% {
+    transform: scale(1.15);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 165, 0, 0.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 165, 0, 0.8);
+  }
+}

@@ -1,5 +1,4 @@
 .choose-text{
-   
     color: #f4c042;
     font-size: 32px;
     font-weight: 400;
@@ -17,7 +16,6 @@
 }
 .menu-elements{
  list-style: none;
- 
  font-size: 20px;
  font-weight: 400;
  line-height: 28px;
@@ -41,12 +39,18 @@
 }
 .lettuce-matter{
     font-size: 14px;
-   font-weight: 400;  
-   line-height: 1.5;
-   margin: 5px;
+    font-weight: 400;  
+    line-height: 1.5;
+    margin: 5px;
     color: rgb(113, 112, 110);
   
 }
 .cost{
     color: #f4c042;
+}
+@media (max-width: 768px) {
+    .ourmenu-section, .A1{
+        display: none;
+    }
+    
 }

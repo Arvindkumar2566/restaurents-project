@@ -38,7 +38,7 @@
 .chief-card img {
     width: 100%;
     /* Make images responsive */
-    max-width: 250px;
+    max-width: 20%;
     /* Limit the maximum size */
     height: auto;
     border-radius: 10px;

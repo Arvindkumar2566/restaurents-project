@@ -15,10 +15,10 @@ const Homecards = () => {
       <h1 className='title2 '>Foody Category</h1>
       <h2 className='highlight2 subtitle2 mt-1'>
         <b><span className='th_orange'>Ch</span>oose Food Item</b>
-      </h2>
+      </h2> 
       <div className="card-container mt-2">
         {images.map((imgSrc, index) => (
-          <div className="card" key={index}>
+          <div className={`card A${index + 1}`} key={index}>
             <img src={imgSrc} alt={`Food Item ${index + 1}`} className="card-image" />
             <div className="card-overlay">
               <span className="discount-text">Save {discounts[index]}</span>
