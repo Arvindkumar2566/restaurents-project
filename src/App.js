@@ -28,22 +28,21 @@ import Searchfooditems from './pages/searchfooditems/Searchfooditems';
 
 function App() {
   const [cart, setCart] = useState(() => {
-    // Restore cart from localStorage on component mount
     const savedCart = localStorage.getItem('cart');
     return savedCart ? JSON.parse(savedCart) : [];
   });
 
-  // Save cart to localStorage whenever it changes
+
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);
 
-  // Function to handle adding items to the cart
+ 
   const CartHandler = (item) => {
     setCart((prevCart) => {
       const existingItem = prevCart.find((cartItem) => cartItem.id === item.id);
       if (existingItem) {
-        // Update quantity if item already exists in cart
+     
         return prevCart.map((cartItem) =>
           cartItem.id === item.id
             ? { ...cartItem, quantity: cartItem.quantity + item.quantity }

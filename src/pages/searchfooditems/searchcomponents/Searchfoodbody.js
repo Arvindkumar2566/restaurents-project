@@ -6,7 +6,7 @@ function Searchfoodbody({ data }) {
     <div className="food-cards">
       {data?.map((meal, index) => (
         <div key={index} className>
-          <div className="card mt-4" style={{ width: '18rem' }}>
+          <div className="card mt-4" >
             <img src={meal.strMealThumb} className="card-img-top" alt={meal.strMeal} />
             <div className="card-body">
               <h5 className="card-title">{meal.strMeal}</h5>

@@ -70,3 +70,11 @@
   font-size: 18px;
   font-weight: 700;
 }
+.card {
+  width: 18rem;
+}
+@media screen and (max-width:425px) {
+  .card {
+    width: 100%;
+  }
+}
