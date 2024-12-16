@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import "./Checkoutpagebody.css";
 
 const Checkoutpagebody = ({ cart, setCart }) => {
@@ -310,9 +310,11 @@ const Checkoutpagebody = ({ cart, setCart }) => {
             </div>
             <h2>Order Placed Successfully!</h2>
             <p>Your order has been placed and will be processed shortly.</p>
-            <button className="close-modal-btn" onClick={closeModal}>
+            <Link className="nav-linkess" to="/home">
+                <button className="close-modal-btn" onClick={closeModal}>
               Close
             </button>
+                </Link>
           </div>
         </div>
       )}

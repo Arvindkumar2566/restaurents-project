@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -9,6 +9,24 @@ function Navbar({ size }) {
   const navigate = useNavigate();
   const [userInitial, setUserInitial] = useState(null);
   const [search, setSearch] = useState("");
+  const [placeholder, setPlaceholder] = useState("");
+  const [isScrolled, setIsScrolled] = useState(false); // New state for scroll detection
+  const placeholderText = "Find delicious meals..."; // Placeholder text to animate
+  const indexRef = useRef(0); // useRef to persist the index value
+
+  useEffect(() => {
+    // Handle scroll event
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsScrolled(true); // Add scrolled class if scrolled more than 100px
+      } else {
+        setIsScrolled(false); // Remove scrolled class if scroll position is less than 100px
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     const auth = getAuth();
@@ -21,7 +39,23 @@ function Navbar({ size }) {
       }
     });
 
-    return () => unsubscribe();
+    // Function to type the placeholder one character at a time
+    const typePlaceholder = () => {
+      if (indexRef.current < placeholderText.length) {
+        setPlaceholder(placeholderText.slice(0, indexRef.current + 1));
+        indexRef.current++;
+      } else {
+        indexRef.current = 0; // Reset index to start typing again
+        setPlaceholder(" "); // Clear the placeholder to start from scratch
+      }
+    };
+
+    const interval = setInterval(typePlaceholder, 200); // Adjust the speed (in ms) here
+
+    return () => {
+      clearInterval(interval); // Clean up interval on component unmount
+      unsubscribe();
+    };
   }, []);
 
   const handleCartClick = () => {
@@ -60,7 +94,7 @@ function Navbar({ size }) {
           <span style={{ color: "orange" }}>Food</span>tuck
         </h2>
       </center>
-      <nav className="navbar navbar-expand-lg navbar-dark">
+      <nav className={`navbar navbar-expand-lg navbar-dark ${isScrolled ? 'scrolled' : ''}`}> {/* Apply scrolled class */}
         <div className="container-fluid nav_top">
           <button
             className="navbar-toggler"
@@ -86,6 +120,7 @@ function Navbar({ size }) {
                   Menu
                 </NavLink>
               </li>
+              {/* Other nav items */}
               <li className="nav-item dropdown">
                 <NavLink
                   className="nav-link dropdown-toggle"
@@ -103,7 +138,8 @@ function Navbar({ size }) {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item" to="/blog/blogdetails">
+                    <NavLink className="dropdown-item" data-bs-toggle="collapse"
+                    to="/blog/blogdetails">
                       Blog Details
                     </NavLink>
                   </li>
@@ -153,8 +189,9 @@ function Navbar({ size }) {
           <form className="d-flex ms-auto" role="search" onSubmit={searchOnsubmit}>
             <input
               className="form-control search"
+              id="searchInput"
               type="search"
-              placeholder="Search..."
+              placeholder={placeholder}
               aria-label="Search"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
@@ -188,15 +225,15 @@ function Navbar({ size }) {
                   </span>
                   <button
                     type="button"
-                    className="btn btn-warning ms-2 nav_btn"
+                    className="btn btn-warning nav_btn"
                     onClick={handleSignOut}
                   >
                     SignOut
                   </button>
                 </>
               ) : (
-                <NavLink className="nav-link" to="/register">
-                  <button type="button" className="btn btn-warning ms-2 nav_btn">
+                <NavLink className="nav-linkss" to="/register">
+                  <button type="button" className="btn btn-warning  nav_btn ">
                     Signup
                   </button>
                 </NavLink>

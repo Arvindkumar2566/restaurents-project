@@ -70,11 +70,31 @@
   background-color: orange;
   color: white;
   border: white 1px;
-  padding: 5px;
+  padding: 10px;
   margin-left: 10px;
   border-radius: 2px;
 }
-
 .insta-icon {
   margin-left: 10px;
+}
+.modal-overlay-card {
+  position: fixed;
+  top: 40px;
+  right:  120px;
+  background: rgb(253, 253, 253);
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  z-index: 1000;
+}
+
+.modal-content-card {
+  color: rgb(54, 231, 34);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

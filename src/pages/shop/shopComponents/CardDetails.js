@@ -6,22 +6,28 @@ const CardDetails = ({ CartHandler }) => {
   const location = useLocation();
   const productDetails = location.state || {};
 
-  const unitPrice = parseFloat(productDetails.price?.replace("$", "")) || 54.0; 
+  const unitPrice = parseFloat(productDetails.price?.replace("$", "")) || 54.0;
   const [quantity, setQuantity] = useState(1);
+  const [isModalVisible, setModalVisible] = useState(false); // State for modal visibility
 
-  const incrementQuantity = () => {
-    setQuantity((prevQuantity) => prevQuantity+ 1);
-  };
+  const incrementQuantity = () => setQuantity((prevQuantity) => prevQuantity + 1);
 
-  const decrementQuantity = () => {
+  const decrementQuantity = () =>
     setQuantity((prevQuantity) => (prevQuantity > 1 ? prevQuantity - 1 : 1));
-  };
 
   const totalCost = (unitPrice * quantity).toFixed(2);
 
   const handleAddToCart = () => {
+    // Show modal
+    setModalVisible(true);
+
+    // Hide modal after 3 seconds
+    setTimeout(() => {
+      setModalVisible(false);
+    }, 3000);
+
     CartHandler({
-      id: productDetails.id || Math.random(), 
+      id: productDetails.id || Math.random(),
       name: productDetails.name || "Yummy Chicken Chup",
       price: unitPrice,
       image: productDetails.image || "/assets/images/cart-product.svg",
@@ -29,9 +35,11 @@ const CardDetails = ({ CartHandler }) => {
     });
   };
 
+  const socialPlatforms = ["insta", "fb", "x", "vk"];
+
   return (
     <div className="carddetail-section d-flex container">
-    
+      {/* Sub-item Images */}
       <div className="sub-item-images">
         {[1, 2, 3, 4].map((num) => (
           <img
@@ -80,7 +88,7 @@ const CardDetails = ({ CartHandler }) => {
           </div>
           <p className="text-black p-2">Dictum / Cursus / Risus</p>
 
-         
+          {/* Quantity & Cart */}
           <div className="mb-3">
             <button className="decrement-btn" onClick={decrementQuantity}>
               -
@@ -108,10 +116,10 @@ const CardDetails = ({ CartHandler }) => {
             <strong>Tag:</strong> Our Shop
           </p>
 
-         
+          {/* Share Section */}
           <div>
             <strong className="text-dark">Share: </strong>
-            {["instagram", "facebook", "x", "vk"].map((platform) => (
+            {socialPlatforms.map((platform) => (
               <a
                 key={platform}
                 href={`https://www.${platform}.com/`}
@@ -119,7 +127,7 @@ const CardDetails = ({ CartHandler }) => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src={`/assets/images/insta-icon.svg`}
+                  src={`/assets/images/${platform}-icon.svg`}
                   alt={platform}
                   className="insta-icon"
                 />
@@ -128,6 +136,15 @@ const CardDetails = ({ CartHandler }) => {
           </div>
         </div>
       </div>
+
+      {/* Modal Overlay */}
+      {isModalVisible && (
+        <div id="modalOverlay" className="modal-overlay-card pt-2">
+          <div className="modal-content-card">
+            <span><q>Item added to cart successfully!</q></span>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
