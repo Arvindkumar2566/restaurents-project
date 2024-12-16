@@ -23,11 +23,11 @@ export default function Blogcomponentbody() {
 
   return (
   <div className="Blogcomponent-section d-flex">
-    <div>
+    <div className='whole-section'>
      
         
         <div className="masala-section" >
-          <img src="/assets/images/masala-blog.svg" alt="masala-blog" className="masala-blog" />
+          <img src="/assets/images/masala-blog.svg" alt="masala-blog" className=" masala-blog" />
           <div className="calender-dates d-flex">
             <img src="/assets/images/blog-dates.svg" alt="blog-dates" className="blog-dates mb-2" />
             <p className="mt-2 ml-2">Feb 14,2022 /</p>

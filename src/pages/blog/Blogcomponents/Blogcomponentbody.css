@@ -126,9 +126,9 @@ text-align: justify;
  
 }
 .Blogcomponent-section{
-background: white;
-gap: 140px;
-padding: 50px;
+    background: white;
+    padding: 50px;
+    justify-content: space-between;
 
 }
 .photo-gallery-section{
@@ -171,6 +171,31 @@ padding: 50px;
 .social-media1{
 background: wheat;
 padding: 5px 10px;
+}
+@media screen and (max-width:767px){
+    .masala-blog{
+max-width: 98%;
+margin: auto;
+     }  
+}
+/* @media screen and (max-width:1400px) {
+    .Blogcomponent-section{
+        flex-wrap: wrap;
+      
+        max-width: 98%;
+        margin: auto;
+        padding: 20px;
+
+        
+    }
+    .search-bar-orange{
+        max-width: 98%;
+        margin: auto;
+    }
+    .whole-section{
+        max-width: 98%;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width:1024px) {
@@ -262,6 +287,25 @@ padding: 5px 10px;
         flex-wrap: wrap;
     }
 }
+@media screen and (min-width:761px){
+    .masala-blog{
+        width: 70%;
+        margin: auto;
+    }
+    .detox-text{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:760px){
+    .masala-blog{
+        width: 70%;
+        margin: auto;
+    }
+    .detox-text{
+        font-size: 18px;
+    }
+   
+}
 
 
 @media screen and (max-width:582px){
@@ -274,6 +318,9 @@ padding: 5px 10px;
      }
     .chicken-soop{
         width: 100%;
+    }
+    .detox-matter {
+        width: 75%;
     }
     .tags{
         flex-wrap: wrap;
@@ -348,4 +395,4 @@ padding: 5px 10px;
     }
     
 }
-
+ */

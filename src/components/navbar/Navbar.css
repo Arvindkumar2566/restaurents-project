@@ -115,11 +115,11 @@
 
 .count1 {
     border-radius: 50%;
-    width: 11px;
+   
     height: 23px;
     position: relative;
     right: 7px;
-    background: orange;
+    color: orange;
     padding: 1px;
 
 }
