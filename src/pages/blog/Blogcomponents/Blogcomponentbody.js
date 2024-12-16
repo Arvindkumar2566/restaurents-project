@@ -28,7 +28,7 @@ export default function Blogcomponentbody() {
         
         <div className="masala-section" >
           <img src="/assets/images/masala-blog.svg" alt="masala-blog" className=" masala-blog" />
-          <div className="calender-dates d-flex">
+          <div className="calender-dates ">
             <img src="/assets/images/blog-dates.svg" alt="blog-dates" className="blog-dates mb-2" />
             <p className="mt-2 ml-2">Feb 14,2022 /</p>
             <img src="/assets/images/chat-product.svg" alt="chats" className="chats ml-2 mb-2" />
@@ -127,7 +127,7 @@ export default function Blogcomponentbody() {
        </div>
     </div>
       <div className='mt-5 search-bar-orange'>
-      <div className="search-bar-elements mb-5" >
+      <div className="search-bar-elements mb-5 d-flex" >
         <input
           type="text"
           placeholder="Search..."
