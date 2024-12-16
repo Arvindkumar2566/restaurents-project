@@ -40,12 +40,11 @@
 .sub-item1{
   width: 100%;
 }
-
-.cart-product {
-  width: 100%;
- 
-
+.add-cart-text:hover{
+  background: rgb(223, 175, 87);
 }
+
+
 
 .carddetail-section {
   background-color: white;
