@@ -34,8 +34,8 @@ text-align: justify;
 }
 
 .search-input {
-    width: 300px;
-    height: 50px;
+    width: 100%;
+    height: auto;
 }
 .photographer-name{
  font-size: 28px;
@@ -121,14 +121,13 @@ text-align: justify;
    
 }
 .masala-section,.pizza-large-section{
-    text-align: left;
-    width: 600px;
+  
  
 }
 .Blogcomponent-section{
     background: white;
     padding: 50px;
-    justify-content: space-between;
+   gap: 50px;
 
 }
 .photo-gallery-section{
@@ -171,12 +170,25 @@ text-align: justify;
 .social-media1{
 background: wheat;
 padding: 5px 10px;
+text-align: center;
 }
-@media screen and (max-width:767px){
+.calender-dates{
+    display: flex;
+}
+@media screen and (max-width:768px){
     .masala-blog{
-max-width: 98%;
-margin: auto;
+       
+        width: 100%;
+            height: auto;
+    
      }  
+     .masala-section{
+        text-align: center;
+     }
+     .calender-dates{
+        display: flex;
+        text-align: center;
+    }
 }
 /* @media screen and (max-width:1400px) {
     .Blogcomponent-section{
