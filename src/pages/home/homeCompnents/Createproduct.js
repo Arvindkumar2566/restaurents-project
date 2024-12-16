@@ -4,17 +4,17 @@ import './Createproduct.css';
 
 const Createproduct = () => {
   return (
-    <div className="createproduct-container mt-3 col-sm-12 d-flex">
+    <div className="tumnil_head mt-3 col-sm-">
       {/* Left Section */}
-      <div className="content mt-5 col-sm-6 ms-2">
-        <h1 className="title">About Us</h1>
-        <h2 className="subtitle mt-2 ms-4">
+      <div className="mt-5 ms-2 tumbnil_content">
+        <h1 className="gold">About Us</h1>
+        <h2 className="gold_1d mt-2 ms-4">
           <b>
-            <span className="highlight">We</span> create the best<br /> foody product
+            <span className="th_orange">We</span> create the best<br /> foody product
           </b>
         </h2>
-        <p className="description w-25 ms-4 text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rius sed pharetra dictum neque massa congue Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rius sed pharetra dictum neque massa congue.
+        <p className="gold_2d ">
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rius sed pharetra dictum neque massa congue.
         </p>
         
         {/* Features */}
@@ -35,12 +35,12 @@ const Createproduct = () => {
         
         {/* Button */}
         <Link to="/">
-          <button type="button" className="btn action-button ms-4 mt-5">Read More</button>
+          <button type="button" className="btn gold_b ms-4 mt-5">Read More</button>
         </Link>
       </div>
 
       {/* Right Section */}
-      <div className="images ms-5 col-sm-6 mt-5">
+      <div className="front_img1 create_pr ms-2 mt-5 w-50">
         <img src="/assets/images/Createproduct_1.svg" className="main-image img  " alt="Main Food" />
         <div className="sub-images d-flex">
           <img src="/assets/images/Createproduct_2.svg" className="sub-image img mt-2" alt="Sub Food 1" />

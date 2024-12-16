@@ -15,7 +15,7 @@ import Ourmenu from './homeCompnents/Ourmenu';
 const Home = () => {
   return (
     <>
-        <Tumbnil />
+      <Tumbnil/>
       <Createproduct/>
       <Homecards/> 
       <Whychoose/> 

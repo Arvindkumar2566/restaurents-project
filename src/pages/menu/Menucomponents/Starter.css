@@ -93,6 +93,8 @@
 
   .image-container, .menu-element {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .menu-item {

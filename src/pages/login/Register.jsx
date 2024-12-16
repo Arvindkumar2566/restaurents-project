@@ -55,7 +55,7 @@ const Register = () => {
       });
 
       alert("Sign-up successful!");
-      navigate("/signin"); // Redirect to Sign In page after successful signup
+      navigate("/home"); // Redirect to Sign In page after successful signup
     } catch (error) {
       alert(error.message); // Show error message if sign-up fails
     } finally {

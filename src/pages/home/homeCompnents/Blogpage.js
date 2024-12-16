@@ -16,7 +16,7 @@ export default function Blogpage() {
           </p>
         </div>
       </div>
-      <div className='cards d-flex container mt-5'>
+      <div className='cards d-flex pb_card container mt-5'>
       <div className="burger-card " >
        <div>
        <img src="/assets/images/burger.svg" alt="burger" className="img-burger" />

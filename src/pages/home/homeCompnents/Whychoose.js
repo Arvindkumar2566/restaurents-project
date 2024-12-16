@@ -3,8 +3,8 @@ import './Whychoose.css'
 
 const Whychoose = () => {
   return (
-    <div className=' d-flex col-sm-12 p-0 mt-5'>
-        <div className=' col-sm-6'>
+    <div className=' tumnil_head why_choose_head col-sm-'>
+        <div className='  head_front_img1 why_choos_pics ms-5 mt-5 w-100'>
             <div className='d-flex '>
                 <div>
                     <img className='whyus_1' src='assets/images/WhyUs_1.svg' alt='WhyUs_1'/>
@@ -20,14 +20,14 @@ const Whychoose = () => {
                 <img className='whyus_6' src='assets/images/WhyUs_6.svg' alt='WhyUs_1'/>
             </div>
         </div>
-        <div className='col-sm-6'>
-            <div className="why_content">
-        <h3 className="why-title">Why Choose Us</h3>
-        <h1 className="main-title">
-          Extra <span className="highlight">ordinary</span> taste <br />
+        <div className=' ms-2 mt-4 why_content'>
+            <div className="tumbnil_content">
+        <h3 className="gold m-0">Why Choose Us</h3>
+        <h1 className="gold_1d">
+          Extra <span className="th_orange">ordinary</span> taste <br />
           And Experienced
         </h1>
-        <p className="description">
+        <p className="gold_2d m-0 why_choose_d">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
         </p>
         <div className="icons">
