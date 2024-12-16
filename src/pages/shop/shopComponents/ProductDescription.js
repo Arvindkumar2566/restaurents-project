@@ -28,7 +28,7 @@ export default function ProductDescription() {
         </div>
         <div className='similar-product '>
             <p className='similar-product-text'> Similar Product</p>
-            <div className='d-flex col-sm-10 mx-5'>
+            <div className='d-flex col-sm-10 similar-products'>
             <div>
                 <img src='/assets/images/plates-spoon.svg' alt='vegetable' className='vegetable-product'/>
                 <p className='similar-product-names'>Fresh lime</p>
