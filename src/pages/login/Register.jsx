@@ -64,7 +64,7 @@ const Register = () => {
   };
 
   return (
-    <div className="signup-container">
+    <div className="signup-container mt-5">
       <div className="signup-box">
         <h1 className="signup-title">Sign Up</h1>
         <form className="signup-form" onSubmit={handleSubmit}>
@@ -131,8 +131,20 @@ const Register = () => {
             <Link className="signin ms-2" to="/signin">
               Sign In
             </Link>
+          
           </span>
         </form>
+        <div className="signin-social-signin">
+          <span className="signin-divider-text">OR</span>
+          <button className="signin-btn-social signin-google">
+            <img src="/assets/images/google_signin_signup.png" alt="Google logo" className="signin-social-icon" />
+            Sign up with Google
+          </button>
+          <button className="signin-btn-social apple signin-google">
+            <img src="/assets/images/apple-logo_signin.png" alt="Google logo" className="signin-social-icon" />
+            Sign up with Apple
+          </button>
+        </div>
       </div>
     </div>
   );

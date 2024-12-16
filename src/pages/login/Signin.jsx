@@ -16,10 +16,8 @@ const SignIn = () => {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
 
-      // Assume user name is saved in Firestore or Firebase Realtime Database
-      const username = user.displayName || "User"; // If Firebase stores a display name
+      const username = user.displayName || "User";
 
-      // Save both the username and email in localStorage
       const userData = {
         name: username,
         email: user.email,
@@ -27,7 +25,7 @@ const SignIn = () => {
       localStorage.setItem("user", JSON.stringify(userData));
 
       alert("Sign-in successful!");
-      navigate("/home"); // Redirect to home page after successful sign-in
+      navigate("/home");
     } catch (error) {
       alert(error.message);
     }
@@ -70,6 +68,19 @@ const SignIn = () => {
             </Link>
           </span>
         </form>
+
+        {/* Social sign-in buttons */}
+        <div className="signin-social-signin">
+          <span className="signin-divider-text">OR</span>
+          <button className="signin-btn-social signin-google">
+            <img src="/assets/images/google_signin_signup.png" alt="Google logo" className="signin-social-icon" />
+            Sign up with Google
+          </button>
+          <button className="signin-btn-social apple signin-google">
+            <img src="/assets/images/apple-logo_signin.png" alt="Google logo" className="signin-social-icon" />
+            Sign up with Apple
+          </button>
+        </div>
       </div>
     </div>
   );

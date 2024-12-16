@@ -181,7 +181,7 @@
 }
 
 .close-modal-btn {
-    background-color: #22a70d;
+    background-color: #309320;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -192,7 +192,7 @@
 }
 
 .close-modal-btn:hover {
-    background-color: #40f209;
+    background-color: #1e5c0bf6;
 }
 .success-animation {
     margin: 15px auto;

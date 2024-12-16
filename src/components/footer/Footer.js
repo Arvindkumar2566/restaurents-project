@@ -150,7 +150,7 @@ const Footer = () => {
             <img src="/assets/images/x.svg" alt="Twitter" className="me-2 social-media" />
           </a>
           <a href="https://yout.com" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/images/youtube.svg" alt="YouTube" className="me-2 social-media" />
+            <img src="/assets/images/youtube_navbar.png" alt="YouTube" className="me-2 social-media" />
           </a>
           <img src="/assets/images/pics.svg" alt="Pics" className="me-2 social-media" />
         </div>

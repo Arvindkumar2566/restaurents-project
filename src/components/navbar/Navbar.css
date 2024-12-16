@@ -1,14 +1,23 @@
 /* Navbar Styling */
 .navbar {
     background-color: black;
-    padding:20px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: none;
-    /* Remove the border under the navbar */
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 2s ease;
+    /* Smooth transition for background */
 }
-
+.navbar.scrolled {
+    background-color:#050505;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    /* Change this to any color when scrolling */
+}
 .navbar-logo {
     font-size: 1.5rem;
     color: white;
@@ -46,27 +55,26 @@
     border-radius: 50%;
     background-color: orange;
     visibility: hidden;
-   
-    /* Initially hide the dot */
 }
-.nav-link:hover{
-    color: rgb(219, 124, 7) !important;
-}
-
 /* Show the dot on hover */
 .nav-link:hover::after {
     visibility: visible;
+}.profile:hover{
+    color: rgb(0, 1, 2);
+    transform: scale(1.1) rotateY(10deg) rotateX(10deg);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    animation: pulseEffect 0.8s ease infinite;
 }
-
-/* Active link */
+#searchInput::placeholder{
+    color: rgba(240, 167, 10, 0.76);
+}
 .active-link {
     color: orange;
 }
-
 .dropdown {
     position: relative;
 }
-
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -77,11 +85,9 @@
     padding: 10px 0;
     border: 1px solid orange;
 }
-
 .dropdown:hover .dropdown-menu {
     display: block;
 }
-
 .dropdown-item {
     text-decoration: none;
     color: white;
@@ -89,12 +95,10 @@
     display: block;
     transition: background-color 0.3s;
 }
-
 .dropdown-item:hover {
     background-color: orange;
     color: black;
 }
-
 /* Search Bar Styling */
 .search_icon {
     top: 7px;
@@ -102,29 +106,39 @@
     width: 20px;
     height: 20px;
     position: relative;
-  
 }
-
 .search {
     background-color: black;
     color: white;
     border: 1px solid orange;
     border-radius: 20px;
+    width: 330px;
 }
 .bag {
     width: 20px;
     height: 20px;
     margin: 8px 0px;
 }
-
+.bag:hover{
+    color: rgb(0, 5, 8);
+    transform: scale(1.1) rotateY(10deg) rotateX(10deg);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+    animation: pulseEffect 0.8s ease infinite;
+}
 .count1 {
     border-radius: 50%;
-   
-    height: 23px;
+    width: 70px;
+    max-width: 20px;
+    min-width: 15px;
+    height: 19px;
     position: relative;
     right: 7px;
     color: orange;
     padding: 1px;
+    justify-content: center;
+    display: flex;
+    font-size: 13px;
 
 }
 .nav-item {
@@ -138,19 +152,22 @@
     width: 35px;
     text-align: center;
     padding-top: 7px;
-   
+   margin-right: 10px;
     border-radius: 50%;
 }
-
 @media (max-width: 769px){
     div.container-fluid.nav_top{
-        flex-wrap: nowrap ;
+        flex-wrap:nowrap;
+            padding: 0px 10px;
+    }
+    .search{
+        width: 100%;
     }
     .navbar{
         padding: 0px;
     }
     .nav_btn{
-        margin-left: 20px !important;
+    margin: 0px 10px !important;
     }
 }
     
