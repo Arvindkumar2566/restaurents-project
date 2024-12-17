@@ -138,7 +138,7 @@ function Navbar({ size }) {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item" data-bs-toggle="collapse"
+                    <NavLink className="dropdown-item"
                     to="/blog/blogdetails">
                       Blog Details
                     </NavLink>

@@ -97,7 +97,8 @@ const CardDetails = ({ CartHandler }) => {
             <button className="increment-btn" onClick={incrementQuantity}>
               +
             </button>
-            <button className="add-cart-text" onClick={handleAddToCart}>
+            <button className="
+            " onClick={handleAddToCart}>
               🛒 Add to Cart
             </button>
           </div>
