@@ -35,7 +35,7 @@ text-align: justify;
 
 .search-input {
     width: 100%;
-    height: auto;
+   height: 50px;
 }
 .photographer-name{
  font-size: 28px;
@@ -116,14 +116,7 @@ text-align: justify;
     padding: 45px;
     border: rgb(3, 3, 3) 1px solid;
 }
-.popular-tag-font{
-    text-align: left;
-   
-}
-.masala-section,.pizza-large-section{
-  
- 
-}
+
 .Blogcomponent-section{
     background: white;
     padding: 50px;
@@ -150,6 +143,9 @@ text-align: justify;
     padding: 45px;
    
 }
+.search-image{
+    width: 10%;
+ }
 .follow-us-text{
     text-align: left;
     color: black;
@@ -175,6 +171,12 @@ text-align: center;
 .calender-dates{
     display: flex;
 }
+@media screen and (max-width:1002px){
+    .search-bar-orange{
+        max-width: 98%;
+        margin: auto;
+     }
+}
 @media screen and (max-width:768px){
     .masala-blog{
        
@@ -182,6 +184,16 @@ text-align: center;
             height: auto;
     
      }  
+     .search-image{
+        width: 10%;
+     }
+     .search-bar-orange{
+        max-width: 98%;
+        margin: auto;
+     }
+.Blogcomponent-section{
+  
+}
      .masala-section{
         text-align: center;
      }
@@ -190,221 +202,11 @@ text-align: center;
         text-align: center;
     }
 }
-/* @media screen and (max-width:1400px) {
+@media screen and (max-width:475px){
     .Blogcomponent-section{
-        flex-wrap: wrap;
+       
+        padding: 20px;
       
-        max-width: 98%;
-        margin: auto;
-        padding: 20px;
-
-        
-    }
-    .search-bar-orange{
-        max-width: 98%;
-        margin: auto;
-    }
-    .whole-section{
-        max-width: 98%;
-        margin: auto;
-    }
-}
-
-@media screen and (max-width:1024px) {
-    .blogdetails-section{
-        flex-wrap: wrap;
-        text-align: justify;
-        
-    }
-    .masala-blog{
-        width: 100%;
-        height:auto;
-     }
-   .search-input1{
-    width: 85%;
-   }
-}
-@media screen and (max-width:768px){
-   
-    .masala-blog{
-        width: 100%;
-        height:auto;
-     }
-    .chicken-soop-section{
-        flex-wrap: wrap;
-    }
-    .commenter-name,.commenter-email{
-        width: 30%;
-        height: auto;
-    }
-    .text-area{
-        width: 40%;
-        height: 50%;
-    }
-    .post-comment{
-        padding: 0 10px
-    }
-    .search-bar-orange{
-        max-width: 98%;
-        margin: auto;
-    }
-   
-
-}
-@media screen and (max-width:1399px){
-    .masala1-section{
-        max-width: 98%;
-        margin: auto;
-    }
-    .search-bar-orange{
-        max-width: 98%;
-    margin: auto;
-    }
-    .chicken-soop-section{
-        flex-wrap: wrap;
-    }
-    .blogdetails-section{
-        flex-wrap: wrap;
-        text-align: justify;
-        
-    }
-}
-@media screen and (max-width:950px){
-    .text-area{
-        width: 40%;
-        height: 50%;
-    }
-    .masala-blog{
-        width: 100%;
-        height:auto;
-     }
-    .commenter-name,.commenter-email{
-        width: 30%;
-        height: auto;
-    }
-    .post-comment{
-        padding: 0 10px
-    }
-    .search-input1{
-        width: 50%;
-        height: auto;
-    }
-    .search-image{
-        width: 7.5%;
-        height: auto;
-    }
-    .photographer,.recent-post-section,.filter-section,.papular-tag-section,.photo-gallery-section,.follow-us{
-        max-width: 98%;
-        margin: auto;
-        flex-wrap: wrap;
-    }
-}
-@media screen and (min-width:761px){
-    .masala-blog{
-        width: 70%;
-        margin: auto;
-    }
-    .detox-text{
-        font-size: 18px;
-    }
-}
-@media screen and (max-width:760px){
-    .masala-blog{
-        width: 70%;
-        margin: auto;
-    }
-    .detox-text{
-        font-size: 18px;
-    }
-   
-}
-
-
-@media screen and (max-width:582px){
-    .blogdetails-section{
-        padding: 20px;
-    }
-    .masala-blog{
-        width: 100%;
-        height:auto;
-     }
-    .chicken-soop{
-        width: 100%;
-    }
-    .detox-matter {
-        width: 75%;
-    }
-    .tags{
-        flex-wrap: wrap;
-    }
-    .md2-section {
-        margin-left: 0px;
-    }
-    .Bbq{
-        flex-wrap: wrap;
-    }
-    .photo-gallery-first-row,.photo-gallery-second-row{
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    .group1{
-        margin-left: 0px;
-        margin-bottom: 0px;
-        gap: 10px;
-    }
-    p{
-        font-size: 10px;
-    }
-    .food-name,.food-price {
-        font-family: Helvetica;
-        font-size: 10px;
-        font-weight: 700;
-    }
-    .follow-us-text,.recent-post-text,.photo-gallery-text,.popular-tag-text,.photographer-name,.post-comment-text,.comment-text,.tag-text,.detox-text{
-        font-size: 15px;
-    }
-    .social-media1-section{
-        flex-wrap: wrap;
-    display: flex;
-    gap: 10px;
-    height: 25%;
-   
-    }
-    .recent-post-elements{
-       line-height: 1.2;
-    }
-    .recent-post-section,.filter-section,.papular-tag-section,.photo-gallery-section,.follow-us ,.photographer{
-
-        padding: 5px;
-        height: 25%;
-    }
-    .recent-post{
-        height: 53px;
-
-    }
-    .imoprtant-matter{
-        font-size: 10px;
-    }
-    .food-container{
-        flex-wrap: wrap;
-        font-size: 6px;
-       
-       
-
-    }
-    .search-image{
-        width: 23%;
-    border: orange 1px solid;
-    }
-    .md-section,.md2-section{
-        flex-wrap: wrap;
-    }
-    .quote{
-        padding: 0px;
-    }
-    .calender-dates{
-        flex-wrap: wrap;
-    }
     
+    }
 }
- */

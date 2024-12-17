@@ -71,3 +71,13 @@ line-height: 30px;
     width: 100%;
     
 }
+@media screen and (max-width:475px){
+    .reviews-text{
+      margin: 0px;
+      flex-wrap: wrap;
+    }
+    .product-description-section{
+        padding: 20px;
+      
+    }
+    }

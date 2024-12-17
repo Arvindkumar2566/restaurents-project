@@ -228,22 +228,22 @@ export default function Blogcomponentbody() {
             <p className='popular-tag-text'>Popular Tags</p>
           </div>
          <div>
-         <div className='d-flex'>
+         <div className='d-flex  Bbq '>
             <p className='popular-tag-name'>Sandwich</p>
             <p  className='popular-tag-name'>Tikka</p>
             <p className='popular-tag-name'>Bbq</p>
           </div>
-          <div className='d-flex'>
+          <div className='d-flex  Bbq '>
           
             <p  className='popular-tag-name'>Restaurant</p>
             <p  className='popular-tag-name'>Chicken Sharma</p>
           </div>
-          <div className='d-flex'>
+          <div className='d-flex  Bbq '>
             <p  className='popular-tag-name'>Health</p>
             <p  className='popular-tag-name'>Fastfood</p>
             <p  className='popular-tag-name'>Food</p>
           </div>
-          <div className='d-flex'>
+          <div className='d-flex  Bbq '>
             <p  className='popular-tag-name'>Chicken</p>
             <p  className='popular-tag-name'>Burger</p>
             <p  className='popular-tag-name'>Pizza</p>
@@ -253,7 +253,7 @@ export default function Blogcomponentbody() {
         <div className='photo-gallery-section mb-5 '>
           <p className='photo-gallery-text'>Photo Gallery</p>
           <div className='photo-gallery-first-row d-flex g-3 '>
-               <img src='/assets/images/group1.svg' alt='food-image' className='group1 mb-2'/>
+               <img src='/assets/images/group1.svg' alt='food-image' className='group1 mb-2  '/>
                <img src='/assets/images/group11.svg' alt='food-image' className='group1 ml-2 mb-2'/>
                <img src='/assets/images/group1.svg' alt='food-image' className='group1 ml-2'/>
           </div>

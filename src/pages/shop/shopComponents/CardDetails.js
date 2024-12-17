@@ -62,7 +62,7 @@ const CardDetails = ({ CartHandler }) => {
 
       {/* Product Details */}
       <div className="cart-product-details">
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between in-stock">
           <p className="stock-text text-black">In stock</p>
           <p className="prev-next-text text-black">- Prev Next -</p>
         </div>
