@@ -1,0 +1,11 @@
+@media (max-width:769px){
+    .third_about{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+            align-content: center;
+    }
+    .text-center{
+        max-width: 100%;
+        width: 100%;
+    }
+}

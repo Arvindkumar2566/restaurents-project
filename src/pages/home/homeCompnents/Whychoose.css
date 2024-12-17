@@ -86,6 +86,8 @@ left: 6%;
 @media (max-width: 769px) {
     .why_choos_pics{
         display: block;
+        width: 70% !important;
+        margin-top: 20px !important;
     }
     .why_choose_head{
         flex-direction:column-reverse !important ;
@@ -93,11 +95,6 @@ left: 6%;
     .whyus-container {
         flex-direction: column;
     }
-    .why_choos_pics{
-        width: 70% !important;
-        margin-top: 20px !important;
-    }
-
     .image-grid {
         grid-template-columns: 1fr;
     }
@@ -127,9 +124,20 @@ left: 6%;
         margin-left: 10px !important;
     }
 }
-@media (max-width: 576px){
+@media (max-width: 450px){
     .col-sm-12 {
         width: 100%;
         flex-direction: column;
     }
+        .whyus_5 {
+            bottom: 30px;
+        }
+    
+        .whyus_6 {
+            bottom: 51px;
+        }
+    
+        .whyus_4 {
+            bottom: 15px;
+        }
 }
