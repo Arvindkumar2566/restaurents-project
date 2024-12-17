@@ -21,12 +21,10 @@
 }
 .card-container {
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    background-color: #000;
-    /* Optional: to match the background in your image */
-    padding: 20px;
-    flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        background-color: #000;
+        padding: 30px;
 }
 
 .card {
@@ -94,7 +92,7 @@
         margin-top: 3px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .card-container {
         flex-wrap: nowrap;
         align-items: center;

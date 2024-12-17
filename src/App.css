@@ -6,11 +6,9 @@ html{
       margin: 0px !important;
     }
 }
-.btn-warning{
-  color:#ffffff;
-  background-color:#FF9F0D;
-}
+
 .btn-warning {
+  color: #ffffff;
   position: relative;
   background-color:orange;
   border: none;
@@ -19,7 +17,6 @@ html{
   font-weight: bold;
   cursor: pointer;
   border-radius: 5px;
-  color: white;
   text-transform: uppercase;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

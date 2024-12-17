@@ -103,3 +103,11 @@
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 7px;
 }
+@media (max-width:769px) {
+    .fifth-about-tabs {
+        display: flex;
+        flex-direction: column;
+        
+        }
+}
+
